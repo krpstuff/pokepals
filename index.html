@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POKEPALS</title>
+    <link rel="icon" type="image/x-icon" href="./imgs/pngegg.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./app.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <img src="./imgs/pokepals.png" alt="PoKéPaLs !" />
+    </header>
+    <main>
+      <div class="dex-deco">
+        <div class="big-circle"></div>
+        <div class="little-circle"></div>
+        <div class="little-circle" style="background-color: #f1d856"></div>
+        <div class="little-circle" style="background-color: #578755"></div>
+      </div>
+      <div class="dex-search">
+        <div class="screen">
+          <img src="/imgs/pngegg.png" alt="pokeball" id="screen-img" />
+        </div>
+        <div class="forms">
+          <form action="" method="get" id="pokemon-search">
+            <label for="name">search for pokemon </label>
+            <div class="search-box">
+              <input
+                type="text"
+                name="name"
+                id="pokemon-name"
+                placeholder="pokemon name"
+              />
+              <input type="submit" value="GO" />
+            </div>
+          </form>
+
+          <form action="" method="get" id="move-search">
+            <label for="move-name">search for move </label>
+            <div class="search-box">
+              <input
+                type="text"
+                name="name"
+                id="move-name"
+                placeholder="move name"
+              />
+              <input type="submit" value="GO" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="results">
+        <label for="info-box" id="info-label">loading info . . .</label>
+        <div id="info-box"></div>
+      </div>
+    </main>
+  </body>
+</html>

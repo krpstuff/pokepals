@@ -1,0 +1,177 @@
+* {
+    font-family: 'VT323', monospace;
+}
+
+body {
+    background: #fff6ec;
+}
+
+strong, b {
+    color: #4469b5;
+    text-shadow: 1px 1px #F7Ce46;
+}
+
+/* HEADER */
+header {
+    width: 60%;
+    margin: 6% auto;
+}
+
+header img {
+    width: 100%;
+}
+
+/* MAIN */
+main {
+    width: 60%;
+    margin: 1% auto;
+    padding: 5%;
+    background: #CA2E36;
+    border-radius: 10px;
+}
+
+.dex-deco {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 246, 236, 0.4);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.big-circle {
+    display: block;
+    background: #56AAF4;
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(255, 246, 236, 0.8);
+    border-radius: 100%;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    margin-right: 5px;
+}
+
+.little-circle {
+    display: block;
+    background: #df5c6b;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.dex-search {
+    display: flex;
+    gap: 20px;
+}
+
+.screen {
+    display: block;
+    width: 30%;
+    background: #242424;
+    border: 10px solid #dedede;
+    border-radius: 5px;
+    padding: 5%;
+}
+
+.screen img {
+    width: 100%;
+}
+
+.search-box {
+    display: flex;
+    gap: 3px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.forms {
+    width: 70%;
+    display: block;
+}
+
+label {
+    font-family: 'Rubik 80s Fade', system-ui;
+    font-size: 1.3em;
+    color: #F7Ce46;
+    text-shadow:
+        -2px -2px 0 #4469b5, /* Top-left shadow */
+        2px -2px 0 #4469b5,  /* Top-right shadow */
+        -2px 2px 0 #4469b5,  /* Bottom-left shadow */
+        2px 2px 0 #4469b5;
+    display: block;
+    margin: 5px;
+}
+
+input {
+    outline: 0;
+    border: 0;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+input[type="text"] {
+    width: 100%;
+    color: #444444;
+    background: #fff6ec;
+    font-size: 1.3em;
+}
+
+input[type="submit"] {
+    font-family: 'Rubik 80s Fade', system-ui;
+    background: #4469b5;
+    color: #fff6ec;
+}
+
+
+#results {
+    border-top: 1px solid rgba(255, 246, 236, 0.4);
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 1.3em;
+    display: none;
+}
+
+#info-box {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #fff6ec;
+}
+
+#info-box label {
+    font-size: 0.9em;
+}
+
+#nature-select {
+    border-bottom: 1px solid #4469b5;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.8em;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    background: #F7Ce46;
+;
+}
+
+#nature-adjustments {
+    font-size: 0.7em;
+    text-align: right;
+}
+
+#add {
+    color: #578755;
+}
+
+#subtract {
+    color: #CA2E36;
+}
