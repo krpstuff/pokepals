@@ -105,11 +105,12 @@ const evoThresholds = {
 
 const neededMoveInfo = {
   descEffects: "description",
+  type: "type",
+  category: "category",
+  wounds: "wounds",
   pp: "pp",
   priority: "priority",
   range: "range",
-  type: "type",
-  wounds: "wounds",
 };
 
 export {
