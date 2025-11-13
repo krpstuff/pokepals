@@ -18,12 +18,12 @@ pkmnSearch.addEventListener("submit", async (e) => {
   e.preventDefault();
   // get input
   const formData = new FormData(pkmnSearch);
-  const pkmn = formData.get("name");
+  const pkmn = formData.get("name").toLowerCase();
   pkmnSearchInput.value = "";
 
   try {
-    const pkmnData = await fetchPkmn(pkmn.toLowerCase());
-    const speciesData = await fetchPkmn(pkmn.toLowerCase(), true);
+    const pkmnData = await fetchPkmn(pkmn);
+    const speciesData = await fetchPkmn(pkmn, true);
 
     // get img
     let pkmnImg = pkmnData?.sprites.front_default;
@@ -55,7 +55,7 @@ moveSearch.addEventListener("submit", async (e) => {
 
   // get move
   const formData = new FormData(moveSearch);
-  const moveName = formData.get("name");
+  const moveName = formData.get("name").toLowerCase();
 
   moveSearchInput.value = "";
 
