@@ -1,6 +1,7 @@
 // imports
-import { natures, diceStat, neededMoveInfo } from "../data/conversions.js";
+import { natures, diceStat, neededMoveInfo, neededPkmnInfo } from "../data/conversions.js";
 import { adjustStats } from "./dice.js";
+import abilities from "../data/abilities.json" with { type: 'json' };
 
 // get original dice stats
 const getDiceStats = async () => {
@@ -68,6 +69,7 @@ const displayDiceStats = async (info, replace = false) => {
   }
 
   for (let stat in info.pkmnStats.diceStats) {
+    console.log(stat)
     let statElem = document.createElement("li");
     statElem.innerHTML = `<b>${stat}</b>: ${info.pkmnStats.diceStats[stat]}`;
     statElem.setAttribute(stat, info.pkmnStats.origStats[stat]);
@@ -77,40 +79,66 @@ const displayDiceStats = async (info, replace = false) => {
   return statList;
 };
 
-// display evo stats
-const displayEvoStats = async (info) => {
-  const evoList = document.createElement("ul");
-  let evoReqs = info.pkmnEvo.info;
+// display pokemon stats
+const displayPokemonStats = async (info) => {
+  const statList = document.createElement("ul");
+  
+  // type(s)
+  let pkmnTypes = info.pkmnStaticData["type1"];
+  if(info.pkmnStaticData["type2"]) pkmnTypes += `, ${info.pkmnStaticData["type2"]}`;
+  
+  // abilities
+  const pkmnAbilities = [info.pkmnStaticData["ability1"]]
+  if(info.pkmnStaticData["ability2"]) pkmnAbilities.push(info.pkmnStaticData["ability2"])
+  if(info.pkmnStaticData["hiddenAbility"]) pkmnAbilities.push(`${info.pkmnStaticData["hiddenAbility"]} (hidden)`)
 
-  for (let req in evoReqs) {
-    let reqElem = document.createElement("li");
-    if (typeof evoReqs[req] == "object") {
-      reqElem.innerHTML = `<b>${req}</b>: ${evoReqs[req].name}`;
-      evoList.appendChild(reqElem);
-    } else if (req != "min_level") {
-      let reqElem = document.createElement("li");
-      reqElem.innerHTML = `<b>${req}</b>: ${evoReqs[req]}`;
-      evoList.appendChild(reqElem);
-    }
+  let abilitiesList = document.createElement("ul");
+
+  for (let i in pkmnAbilities) {
+    let abilityDesc = abilities[pkmnAbilities[i].split(" (")[0].toLowerCase()].description;
+    let abilityElem = document.createElement("li");
+    abilityElem.innerHTML = `<strong>${pkmnAbilities[i]}</strong>: ${abilityDesc}`;
+    abilitiesList.appendChild(abilityElem);
   }
-  return evoList;
-};
+
+  // pokemon stats
+  for (let stat in neededPkmnInfo) {
+    let statElem = document.createElement("li");
+    if (stat == "type") {
+      statElem.innerHTML = `<strong>type(s):</strong> ${pkmnTypes}`;
+    } else if (stat == "abilities") {
+      statElem.innerHTML = `<strong>possible abilities</strong>:`;
+      statElem.appendChild(abilitiesList);
+    } 
+    else {
+      statElem.innerHTML = `<strong>${neededPkmnInfo[stat]}</strong>: ${info.pkmnStaticData[stat]}`;
+    }
+    statList.appendChild(statElem);
+  }
+
+  // return
+  return {statList};
+}
 
 // display move stats
 const displayMoveStats = async (info) => {
   const moveList = document.createElement("ul");
+  
+  // move stats
   for (let move in neededMoveInfo) {
     let moveElem = document.createElement("li");
     moveElem.innerHTML = `<strong>${neededMoveInfo[move]}</strong>: ${info.moveData[move]}`;
     moveList.appendChild(moveElem);
   }
-  return moveList;
+
+  // return
+  return {moveList};
 };
 
 export {
   getDiceStats,
   natureDropdown,
   displayDiceStats,
-  displayEvoStats,
+  displayPokemonStats,
   displayMoveStats,
 };

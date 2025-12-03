@@ -58,51 +58,6 @@ const natures = {
   serious: [5, 5],
 };
 
-const evoMult = [[15], [10, 20], [5, 15, 25]];
-
-const evoThresholds = {
-  1: {
-    maxLevel: 10,
-    expNeeded: 0,
-  },
-  2: {
-    maxLevel: 20,
-    expNeeded: 1000,
-  },
-  3: {
-    maxLevel: 30,
-    expNeeded: 3000,
-  },
-  4: {
-    maxLevel: 40,
-    expNeeded: 6000,
-  },
-  5: {
-    maxLevel: 50,
-    expNeeded: 10000,
-  },
-  6: {
-    maxLevel: 60,
-    expNeeded: 15000,
-  },
-  7: {
-    maxLevel: 70,
-    expNeeded: 21000,
-  },
-  8: {
-    maxLevel: 80,
-    expNeeded: 28000,
-  },
-  9: {
-    maxLevel: 90,
-    expNeeded: 36000,
-  },
-  10: {
-    maxLevel: 100,
-    expNeeded: 45000,
-  },
-};
-
 const neededMoveInfo = {
   descEffects: "description",
   type: "type",
@@ -111,14 +66,23 @@ const neededMoveInfo = {
   pp: "pp",
   priority: "priority",
   range: "range",
+  targetType: "target type"
 };
+
+const neededPkmnInfo = {
+  pokemonName: "name",
+  type: "type",
+  evolutionRank: "evolution rank or method",
+  size: "size",
+  movement: "movement type",
+  abilities: "abilities"
+}
 
 export {
   dice,
   diceStat,
   statThresholds,
   natures,
-  evoMult,
-  evoThresholds,
   neededMoveInfo,
+  neededPkmnInfo
 };

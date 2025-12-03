@@ -6,7 +6,8 @@ body {
     background: #fff6ec;
 }
 
-strong, b {
+strong,
+b {
     color: #4469b5;
     text-shadow: 1px 1px #F7Ce46;
 }
@@ -95,9 +96,12 @@ label {
     font-size: 1.3em;
     color: #F7Ce46;
     text-shadow:
-        -2px -2px 0 #4469b5, /* Top-left shadow */
-        2px -2px 0 #4469b5,  /* Top-right shadow */
-        -2px 2px 0 #4469b5,  /* Bottom-left shadow */
+        -2px -2px 0 #4469b5,
+        /* Top-left shadow */
+        2px -2px 0 #4469b5,
+        /* Top-right shadow */
+        -2px 2px 0 #4469b5,
+        /* Bottom-left shadow */
         2px 2px 0 #4469b5;
     display: block;
     margin: 5px;
@@ -146,10 +150,38 @@ input[type="submit"] {
     font-size: 0.9em;
 }
 
-#nature-select {
+#pkmndb-links {
     border-bottom: 1px solid #4469b5;
     padding-bottom: 20px;
     margin-bottom: 20px;
+    display: flex;
+}
+
+#moves-link,
+#types-link {
+    box-sizing: border-box;
+    width: 50%;
+    display: block;
+    background: #F7Ce46;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+#moves-link:hover,
+#types-link:hover {
+    background: #4469b5;
+}
+
+a {
+    color: #4469b5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F7Ce46;
 }
 
 select {
@@ -160,7 +192,7 @@ select {
     border: 0;
     border-radius: 5px;
     background: #F7Ce46;
-;
+    ;
 }
 
 #nature-adjustments {
@@ -174,4 +206,14 @@ select {
 
 #subtract {
     color: #CA2E36;
+}
+
+pre {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.7em;
+    background: #eee;
+    padding: 10px;
+    max-height: 100px;
+    overflow: auto;
+    border-radius: 5px;
 }

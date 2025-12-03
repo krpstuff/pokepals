@@ -1,0 +1,1222 @@
+{
+    "adaptability": {
+        "ability": "Adaptability",
+        "description": "This creature deals 2 Wounds for S.T.A.B. damage, rather than 1 Wound. "
+    },
+    "aerilate": {
+        "ability": "Aerilate",
+        "description": "Normal-Type Moves that this creature uses are considered Flying-Type Moves and deal 1 additional Wound."
+    },
+    "aftermath": {
+        "ability": "Aftermath",
+        "description": "When this creature Faints from being hit with a Contact Move, the attacker is dealt 3 Wounds. This Ability does not activate if another creature in Battle has the Damp Ability."
+    },
+    "air lock": {
+        "ability": "Air Lock",
+        "description": "While this creature is in Battle, Weather conditions have no effects. The conditions do not disappear, but they no longer grant any bonuses or penalties, and do not activate abilites. "
+    },
+    "analytic": {
+        "ability": "Analytic",
+        "description": "If this creature takes their Turn after all other creature in the Turn Order, their Special and Physical Moves deal 2 additional Wounds during that turn. "
+    },
+    "anger point": {
+        "ability": "Anger Point",
+        "description": "When this creature is hit by a Critical Hit, their Attack is raised by +8 Stages. "
+    },
+    "anger shell": {
+        "ability": "Anger Shell",
+        "description": "When this creature falls to 4 Wounds or lower, their Attack, Special Attack., and Speed all increase by +2 Stages, and their HP, Defense and Special Defense both lower by -2 Stages."
+    },
+    "anticipation": {
+        "ability": "Anticipation",
+        "description": "When this creature enters Battle, this creature will 'shudder' and alert their trainer if any of the enemy creatures know a Move that is Super Effective to the user or one of the following Moves:  Fissure, Guillotine, Horn Drill,  or Sheer Cold"
+    },
+    "arena trap": {
+        "ability": "Arena Trap",
+        "description": "While this creature is in Battle, enemy creatures cannot Flee or Swap without the use of an Ability, Item, or Move. Creatures with a flying or levitating speed are unaffected. "
+    },
+    "armor tail": {
+        "ability": "Armor Tail",
+        "description": "When an enemy creature would use a Move with Priority that includes this creature or its allies as a target, that Move instead does nothing. PP is still consumed, but the Move is cancelled. "
+    },
+    "aroma veil": {
+        "ability": "Aroma Veil",
+        "description": "While this creature is in Battle, it and its allies are immune to Moves and Abilites that would prevent them from using Moves, such as Disable or Taunt. "
+    },
+    "as one": {
+        "ability": "As One",
+        "description": "If this creature is Ice Rider Calyrex, it gains the effects of both the Unnerve and Chilling Neigh Abilites. If this creature is Shadow Rider Calyrex, it gains the effects of both the Unnerve and Grim Neigh Abilites. Effects that would remove, replace or copy this Ability to not affect this creature. "
+    },
+    "aura break": {
+        "ability": "Aura Break",
+        "description": "While this creature is in Battle, the effect of 'Aura' Abilities, such as Fairy Aura and Dark Aura, are inversed. Instead of affected Moves dealing 2 additional Wounds, their damage is reduced by 2 Wounds, to a minimum of 1 Wound.  "
+    },
+    "bad dreams": {
+        "ability": "Bad Dreams",
+        "description": "At the end of each Round, if an enemy creature is Asleep and this creature is in Battle, the Asleep creature takes 1 Wound of damage."
+    },
+    "ball fetch": {
+        "ability": "Ball Fetch",
+        "description": "If the user of this creature throws a Pokeball and fails to catch a creature, if this creature does not have a Held Item, this creature will recover that Pokeball and hold it as a Held Item until the end of that Battle. The Pokeball can then be recovered for later use instead of being discarded. "
+    },
+    "battery": {
+        "ability": "Battery",
+        "description": "Special Moves used by allies of this creature deal 1 additional Wound while this creature is in Battle. "
+    },
+    "battle armor": {
+        "ability": "Battle Armor",
+        "description": "Critical Hits do not deal additional Wounds to this creature."
+    },
+    "battle bond": {
+        "ability": "Battle Bond",
+        "description": "When this creature causes another creature to Faint from using a Physical or Special Move, this creature's Attack, Sp. Attack, and Speed increase by +2 Stages. "
+    },
+    "beads of ruin": {
+        "ability": "Beads of Ruin",
+        "description": "While this creature is in Battle, each other creature's Sp. Defense Die decreases by 1 size. This ability has no affect on creatures with a d4 Sp. Defense Die. "
+    },
+    "beast boost": {
+        "ability": "Beast Boost",
+        "description": "When this creature causes another creature to Faint from using a Physical or Special Move, this creature's Stat with the largest Die Size is increased by +2 Stages. If one or more Stat Dice are tied for largest, this ability prioritizes them in this order: Attack, Defense, Special Attack, Special Defense, Speed, and HP."
+    },
+    "berserk": {
+        "ability": "Berserk",
+        "description": "When this creature falls to 4 Wounds or lower from the use of a Physical or Special Move, their Sp. Attack increases by +2 Stages. If this creature is healed and then damage trigger this ability again, their Sp. Attack increases again. "
+    },
+    "big pecks": {
+        "ability": "Big Pecks",
+        "description": "This creature cannot have their Defense Stages lowered from Moves or Abilites used by other creatures, such as Tail Whip.  "
+    },
+    "blaze": {
+        "ability": "Blaze",
+        "description": "While this creature has 3 or fewer Wounds remaining, their Fire-type attacks deal 1 additional Wound."
+    },
+    "bulletproof": {
+        "ability": "Bulletproof",
+        "description": "This creature cannot be damaged or affected by the following Moves: Acid Spray, Aura Sphere, Barrage, Beak Blast, Bullet Seed, Egg Bomb, Electro Ball, Energy Ball, Focus Blast, Gyro Ball, Ice Ball, Magnet Bomb, Mist Ball, Mud Bomb, Octazooka, Pollen Puff, Pyro Ball, Rock Blast, Rock Wrecker, Searing Shot, Seed Bomb, Shadow Ball, Sludge Bomb, Weather Ball,  and Zap Cannon "
+    },
+    "cheek pouch": {
+        "ability": "Cheek Pouch",
+        "description": "When this creature consumes a Berry as a Held Item, they regain 3 Wounds in addition to the effects of the Berry. This ability triggers even if the eaten Berry is acquired through a Move such as Bug Bite or Pluck."
+    },
+    "chilling neigh": {
+        "ability": "Chilling Neigh",
+        "description": "When this creature causes another creature to Faint from using a Physical or Special Move, its Attack will increase by +2 Stages. "
+    },
+    "chlorophyll": {
+        "ability": "Chlorophyll",
+        "description": "While this creature is in Harsh Sunlight, their Movement Speed and Turn Order are doubled."
+    },
+    "clear body": {
+        "ability": "Clear Body",
+        "description": "This creature cannot have their Stages lowered by the Abilites or Moves of other creatures. "
+    },
+    "cloud nine": {
+        "ability": "Cloud Nine",
+        "description": "While this creature is in Battle, Weather conditions have no effects. The conditions do not disappear, but they no longer grant any bonuses or penalties, and do not activate abilites. "
+    },
+    "color change": {
+        "ability": "Color Change",
+        "description": "When this creature is hit by a Physical or Special Move, their Type changes to match that of the attacking Move. This ability is applied after Status Conditions are applied, meaning that if the new type would be immune to that Status Condition, this creature is still affected if it was susceptible to that condition before the type change. "
+    },
+    "comatose": {
+        "ability": "Comatose",
+        "description": "This creature is always treated as though it is Asleep, without having the Status Condition. This ability cannot be changed, removed, swapped, or negated. This creature is immune to effects that would prevent Sleep. This creature is immune to Burn, Confusion, Freeze, Paralysis, and Poison. "
+    },
+    "commander": {
+        "ability": "Commander",
+        "description": "When this creature enters Battle, if an ally Dondozo is in Battle, this creature enters its mouth until Dondozo leaves Battle. Dondonzo cannot leave Battle without Fainting while this Ability is in effect. When Dondozo Faints, this creature leaves its mouth. While in Dondozo's mouth, this creature isunable to use Moves and is uneffected by Moves, Abilities, and Items, but is effected by Weather Conditions and Status Effects. "
+    },
+    "competitive": {
+        "ability": "Competitive",
+        "description": "When this creature has the Stage of a Stat lowered by an opponent's Move or Ability, this creature's Special Attack increases by +4 Stages. If multiple Stages would be lowered, this ability triggers for each lowered Stat."
+    },
+    "compound eyes": {
+        "ability": "Compound Eyes",
+        "description": "When this creature rolls to attack with a Move, they add a +3 bonus to the attack roll."
+    },
+    "contrary": {
+        "ability": "Contrary",
+        "description": "If a Move or Ability would cause this creature to change their Stages, in does the inverse. (Example: If a Move would raise this creature's Speed by +2 Stages, it instead lowers it by -2 Stages.)"
+    },
+    "corrosion": {
+        "ability": "Corrosion",
+        "description": "When this creature uses a Move, Item, or Ability that would Poison a creature that is immune to the Poisoned Status Condition, they ignore that creautre's immunity. "
+    },
+    "costar": {
+        "ability": "Costar",
+        "description": "When this creature enters Battle, if an ally has had their Stat Stages changed in any way, this creature copies thoes Stage changes. "
+    },
+    "cotton down": {
+        "ability": "Cotton Down",
+        "description": "When this creature is hit by a Physical or Special Move, all other creatures in Battle have their Speed lowered by -2 Stages."
+    },
+    "cud chew": {
+        "ability": "Cud Chew",
+        "description": "When this creature consumes a Berry as a Held Item, they will gain the benefits of the Berry again at the end of the Turn after they consume the Berry. "
+    },
+    "curious medicine": {
+        "ability": "Curious Medicine",
+        "description": "When this creature enters Battle, any changes to the Stages of each ally creature are removed. "
+    },
+    "cursed body": {
+        "ability": "Cursed Body",
+        "description": "When this creature is hit by a Physical or Special Move, there is a 33% chance that move will be disabled (as per the Disable Move) for four Turns."
+    },
+    "cute charm": {
+        "ability": "Cute Charm",
+        "description": "When this creature is hit by a Contact Move, the attacker may become Infatuated. If the attacker is of the same gender as the user, they are not affected by this Ability."
+    },
+    "damp": {
+        "ability": "Damp",
+        "description": "While this creature is in battle, no creatures may suffer any wounds or effects from the Self-Destruct or Explosion moves"
+    },
+    "dancer": {
+        "ability": "Dancer",
+        "description": "When another creature uses a Dance Move, if this creature is in Battle and has not yet used their Turn, they may immediately declare the use of a Dance Move and take their Turn. The following Moves are Dance Moves: Aqua Step, Clangorous Soul, Dragon Dance, Feather Dance, Fiery Dance, Lunar Dance, Petal Dance, Revelation Dance, Quiver Dance, Swords Dance, Swords Dance, Teeter Dance, Victory Dance"
+    },
+    "dark aura": {
+        "ability": "Dark Aura",
+        "description": "This creature's Dark-type Moves deal 2 additional Wounds on a hit. "
+    },
+    "dauntless shield": {
+        "ability": "Dauntless Shield",
+        "description": "When this creature enters Battle, its Defense increases by +2 Stages. This Ability triggers only once per Battle. "
+    },
+    "dazzling": {
+        "ability": "Dazzling",
+        "description": "When an enemy creature would use a Move with Priority that includes this creature or its allies as a target, that Move instead does nothing. PP is still consumed, but the Move is cancelled. "
+    },
+    "defeatist": {
+        "ability": "Defeatist",
+        "description": "While this creature has at least 5 Wounds of damage, its Attack and Sp. Attack Dice are both lowered by two Die Sizes. "
+    },
+    "defiant": {
+        "ability": "Defiant",
+        "description": "When this creature has a Stage lowered by a Move from another creature, its Attack increases by +4 Stages. "
+    },
+    "delta stream": {
+        "ability": "Delta Stream",
+        "description": "When this creature enters Battle, the Weather changes to Strong Winds until this creature leaves Battle or until it loses this Ability. "
+    },
+    "desolate land": {
+        "ability": "Desolate Land",
+        "description": "When this creature enters Battle, the Weather changes to Extremely Harsh Sunlight until this creature leaves Battle or until it loses this Ability. "
+    },
+    "disguise": {
+        "ability": "Disguise",
+        "description": "The first time in Battle that this creature would be dealt damage by a Special or Physical Move, they instead take no Wounds from that Move and gains the unique form 'Busted'. A creature retains their 'Busted' form until the Battle Ends, even if it leaves Battle."
+    },
+    "download": {
+        "ability": "Download",
+        "description": "When this creature enters Battle, it designates one other creature in Battle. If that creature's Defense Die Size is lower than it's Special Defense Die Size, this creature's Attack increases by +2 Stages. If the opposite is true, this creature's Special Attack increases by +2 Stages. If they are teh same, this Ability has no effect."
+    },
+    "dragon's maw": {
+        "ability": "Dragon's Maw",
+        "description": "This creature's Dragon-type Moves deal 2 additional Wounds on a hit. "
+    },
+    "drizzle": {
+        "ability": "Drizzle",
+        "description": "When this creature enters Battle, it creates Rain for 5 turns."
+    },
+    "drought": {
+        "ability": "Drought",
+        "description": "When this creature enters Battle, it creates Harsh Sunlight for 5 turns."
+    },
+    "dry skin": {
+        "ability": "Dry Skin",
+        "description": "When hit by a Water-Type Move, instead of recieving Wounds, this creature heals by 2 Wounds. If this creature would receive Wounds from a Fire-Type attack, it receives 1 additional Wound. During Harsh Sunlight, this creature loses 1 Wound at the end of each Round. During Rain, this creature regains 1 Wound at the end of each Round."
+    },
+    "early bird": {
+        "ability": "Early Bird",
+        "description": "This creature's chance of awakening from Asleep is a cumulative 40% chance, rather than 20%."
+    },
+    "earth eater": {
+        "ability": "Earth Eater",
+        "description": "When hit by a Ground-Type Move, this creature takes no Wounds and instead regains that many Wounds."
+    },
+    "effect spore": {
+        "ability": "Effect Spore",
+        "description": "When this creature is hit by a Contact Move, the attacker may be Poisoned, Paralyzed, or put to Sleep (chosen at random)."
+    },
+    "electric surge": {
+        "ability": "Electric Surge",
+        "description": "When this creature enters Battle, it uses Electric Terrain."
+    },
+    "electromorphosis": {
+        "ability": "Electromorphosis",
+        "description": "The first time this creature is hit by a Physical or Special Move each Round, this creature becomes \"charged\" until the end of its next Turn. While charged, Electric-Type Phyiscal or Special Moves that this creature use deal additional Wounds equal to their base Wound amounts. "
+    },
+    "embody aspect": {
+        "ability": "Embody Aspect",
+        "description": "When this creature Terastalizes, one of its stats increases by +2 Stages, depending on its Mask: Speed (Teal), Sp. Defense (Wellspring), Attack (Hearthflame), or Defense (Cornerstone)."
+    },
+    "emergency exit": {
+        "ability": "Emergency Exit",
+        "description": "When this creature falls above 5 Wounds of damage taken, it immediately Swaps with another creature in its Party. If there are no other creatures to Swap with, this effect fails."
+    },
+    "fairy aura": {
+        "ability": "Fairy Aura",
+        "description": "This creature's Fairy-type Moves deal 2 additional Wounds on a hit. "
+    },
+    "filter": {
+        "ability": "Filter",
+        "description": "This creature takes 1 fewer Wounds from Moves that they are vulnerable to."
+    },
+    "flame body": {
+        "ability": "Flame Body",
+        "description": "When this creature is hit with a Contact Move, the attacking creature may develop a Burn. Outside of combat, if this creature is in your Team at the same time as an Egg, the Egg's Egg Cycle is halved (rounded down)."
+    },
+    "flare boost": {
+        "ability": "Flare Boost",
+        "description": "While this creature is Burned, its Sp. Attack Die Size increases by 2 sizes and this creature's Special Moves deal 1 additional Wound. "
+    },
+    "flash fire": {
+        "ability": "Flash Fire",
+        "description": "When this creature would receive a Wound from a Fire-Type attack, they instead receive no Wounds. Fire-Type Moves that this creature uses deal 2 additional Wounds until they leave Battle. Additional triggers of this Ability grant no further benefits. "
+    },
+    "flower gift": {
+        "ability": "Flower Gift",
+        "description": "While this creature is in Harsh Sunlight, ally creatures, including this creature, have their Attack and Sp. Defense Die Sizes increased by 1 size. "
+    },
+    "flower veil": {
+        "ability": "Flower Veil",
+        "description": "Ally Grass-Type creatures, including this creature, cannot have their Stages lowered by enemy creatures. These creatures also cannot being Asleep, Burned, Paralyzed, Poisoned, or Badly Poisoned. "
+    },
+    "fluffy": {
+        "ability": "Fluffy",
+        "description": "This creature takes 1 fewer Wounds from Contact Moves. This creature takes twice as many Wounds from Fire-Type Physical and Special Moves. "
+    },
+    "forecast": {
+        "ability": "Forecast",
+        "description": "This creature changes its Form with the following Weather conditions: Sunny (Harsh Sunlight), Rainy (Rain), or Snowy (Hail)."
+    },
+    "forewarn": {
+        "ability": "Forewarn",
+        "description": "When this creature enters Battle, it designates one other creature in Battle. It learns what Move the creature currently knows that deals the highest amount of Wounds. If there is a tie, or none of their Moves deal Wounds, then they will learn a Move chosen at random."
+    },
+    "friend guard": {
+        "ability": "Friend Guard",
+        "description": "While this creature is in battle, allies of this creature take one fewer Wound from Moves that deal damage. This cannot reduce that damage to fewer than one Wound."
+    },
+    "frisk": {
+        "ability": "Frisk",
+        "description": "This creature is aware of what Held Item each other creature in Battle has."
+    },
+    "full metal body": {
+        "ability": "Full Metal Body",
+        "description": "This creature cannot have its Stages lowered by enemy creatures. "
+    },
+    "fur coat": {
+        "ability": "Fur Coat",
+        "description": "This creature takes two fewer Wounds from Physical Moves, to a minimum of 1 Wound. "
+    },
+    "gale wings": {
+        "ability": "Gale Wings",
+        "description": "Flying-Type Moves used by this creature have Priority. "
+    },
+    "galvanize": {
+        "ability": "Galvanize",
+        "description": "Normal-Type Moves that this creature uses are considered Electric-Type Moves and deal 1 additional Wound."
+    },
+    "gluttony": {
+        "ability": "Gluttony",
+        "description": "If this creature is holding a Berry that has a Trigger of having 6 or more Wounds, they will instead Trigger the use of that Berry after falling to 3 or more Wounds."
+    },
+    "good as gold": {
+        "ability": "Good as Gold",
+        "description": "This creature is unaffected by other creature's Status Moves that do not have a targeting type of Hazard or Field. "
+    },
+    "gooey": {
+        "ability": "Gooey",
+        "description": "If this creature is hit with a Contact Move, the attacker has their Speed lowered by -2 Stages. "
+    },
+    "gorilla tactics": {
+        "ability": "Gorilla Tactics",
+        "description": "This creature's Physical Moves deal 2 additional Wounds on a hit, but they once they use a Move, they can use only that Move until they run out of Power Points, or they leave Battle."
+    },
+    "grass pelt": {
+        "ability": "Grass Pelt",
+        "description": "While in Grassy Terrain, this creature's Defense Die increases by 2 sizes. "
+    },
+    "grassy surge": {
+        "ability": "Grassy Surge",
+        "description": "When this creature enters Battle, it uses Grassy Terrain."
+    },
+    "grim neigh": {
+        "ability": "Grim Neigh",
+        "description": "When this creature causes another creature to Faint from using a Physical or Special Move, its Sp. Attack will increase by +2 Stages. "
+    },
+    "guard dog": {
+        "ability": "Guard Dog",
+        "description": "This creature cannot be Swapped by an enemy's Move, Item, or Ability. If a creature would use Intimidate on this creature, this creature does not have its Attack lowered, instead having its Attack raised by +2 Stages. "
+    },
+    "gulp missile": {
+        "ability": "Gulp Missile",
+        "description": "If this creature uses Dive or Surf, it changes form depending on its health: Gulping Form (less than 4 Wounds of damage) or Gorging Form (5 or more Wounds of damage). When hit by a Physical or Special Move in either Form, the user deals 2 Wounds to the attacking creature and applying a secondary effect based on its form: lower Defense by -2 Stages (Gulping) or Paralyzed (Gorging). After dealing damage with this Ability, this creautre reverts to its base form. "
+    },
+    "guts": {
+        "ability": "Guts",
+        "description": "While this creature is Poisoned, Burnt, Paralyzed, Frozen or Asleep, its Attack Die Size increases by two sizes. It does not suffer the penalty to attack rolls from Burn while this Ability is active."
+    },
+    "hadron engine": {
+        "ability": "Hadron Engine",
+        "description": "When this creature enters Battle, it uses Electric Terrain. While this creature is in an Electric Terrain, it gains an Advantage to attacking rolls that use its Special Attack. "
+    },
+    "harvest": {
+        "ability": "Harvest",
+        "description": "When this creature eats a Berry, there is a 50% chance that they will sprout another Berry of the same kind. This Ability cannot create more than one Berry per Round. While in Harsh Sunlight, it instead has a 100% chance."
+    },
+    "healer": {
+        "ability": "Healer",
+        "description": "At the end of this creature's Turn, if any of its allies have a Status Condition, there is a 30% that this creature will heal them of that Condtion. This applies to each Status Condition present."
+    },
+    "heat proof": {
+        "ability": "Heat Proof",
+        "description": "This creature takes half as many Wounds from Fire-Type Moves, rounded down (minimum 1)."
+    },
+    "heavy metal": {
+        "ability": "Heavy Metal",
+        "description": "This creature's weight is doubled. If this creature uses or is the target of a Move that considers its Size, this creature counts as one Size Category larger. "
+    },
+    "honey gather": {
+        "ability": "Honey Gather",
+        "description": "This Ability has no effect in Battle. On each day of Travel, there is a 25% chance that this creature will gather one Honey for their Trainer. "
+    },
+    "hospitality": {
+        "ability": "Hospitality",
+        "description": "When this creature enters Battle, up to one ally creature regains 3 Wounds. "
+    },
+    "huge power": {
+        "ability": "Huge Power",
+        "description": "When this creature uses a Physical Move, it deals 2 additional Wounds."
+    },
+    "hustle": {
+        "ability": "Hustle",
+        "description": "When this creature makes an attack with a Physical Move, they take a -3 penalty to the attacking roll, but they deal 2 additional Wounds on a hit. "
+    },
+    "hydration": {
+        "ability": "Hydration",
+        "description": "In Rain, this creature heals itself of all Status Conditions at the end of each Round"
+    },
+    "hyper cutter": {
+        "ability": "Hyper Cutter",
+        "description": "This creature cannot have their Attack Stage lowered by the Moves or Abilities of other creatures."
+    },
+    "ice body": {
+        "ability": "Ice Body",
+        "description": "While this creature is in Hail, it regains 1 Wound at the end of each Round."
+    },
+    "ice face": {
+        "ability": "Ice Face",
+        "description": "The first time in Battle that this creature would be dealt damage by a Physical Move, they instead take no Wounds from that Move and gains the unique form 'No Ice Face'. A creature retains their 'No Ice Face' form until the Battle Ends, even if it leaves Battle, or until in enters Battle while Hail is present, or until Hail begins while this creature is in Battle. Once a creature has lost their 'No Ice Face' form, they may benefit from this ability again. "
+    },
+    "ice scales": {
+        "ability": "Ice Scales",
+        "description": "This creature takes half as many Wounds from Special Moves, rounded down (minimum 1)."
+    },
+    "illuminate": {
+        "ability": "Illuminate",
+        "description": "When this creature's Trainer rolls for the Downtime Activity 'Capture Pokemon', they add this creature's Rank to the roll. "
+    },
+    "illusion": {
+        "ability": "Illusion",
+        "description": "When this creature enters Battle, it disguises itself as another creature of its choice from its Party, replicating its exact appearance. If this creature takes damage from a Physical or Special Move, it loses its disguise. "
+    },
+    "immunity": {
+        "ability": "Immunity",
+        "description": "This creature cannot be Poisoned or Badly Poisoned. "
+    },
+    "imposter": {
+        "ability": "Imposter",
+        "description": "When this creature enters Battle, it designates one other creature in Battle. It takes on the appearance, Abilities, Stat Dice, and Moves of that creature until Fainted, Returned, or Battle End. The Moves that are copied have half as many PP (rounded down)."
+    },
+    "infiltrator": {
+        "ability": "Infiltrator",
+        "description": "This creature ignores the effects of the Reflect, Light Screen, Mist, Aurora Veil, and Safeguard Moves."
+    },
+    "innards out": {
+        "ability": "Innards Out",
+        "description": "When this creature Faints from being hit by a Special or Physical Move, and the attacker is still in Battle, this creature deals damage equal to the attacker equal to the amount of health that it had at the beginning of the Turn. "
+    },
+    "inner focus": {
+        "ability": "Inner Focus",
+        "description": "This creature cannot be Flinched."
+    },
+    "insomnia": {
+        "ability": "Insomnia",
+        "description": "This creature cannot fall Asleep."
+    },
+    "intimidate": {
+        "ability": "Intimidate",
+        "description": "When this creature enters Battle, all enemy creatures have their Attack lowered by -2 Stages."
+    },
+    "intrepid sword": {
+        "ability": "Intrepid Sword",
+        "description": "When this creature enters Battle, its Attack increases by +2 Stages. "
+    },
+    "iron barbs": {
+        "ability": "Iron Barbs",
+        "description": "When this creature is hit by a Contact Move, the attacker takes 1 Wound. "
+    },
+    "iron fist": {
+        "ability": "Iron Fist",
+        "description": "All 'punching' Moves this creature uses deal 1 additional Wound. Punching Moves include: Bullet Punch, Comet Punch, Dizzy Punch, Double Iron Bash, Drain Punch, Dynamic Punch, Fire Punch, Focus Punch, Hammer Arm, Ice Hammer, Ice Punch, Mach Punch, Mega Punch, Meteor Mash, Plasma Fists, Power-Up Punch, Shadow Punch, Sky Uppercut, Surging Strikes, Thunder Punch, Wicked Blow."
+    },
+    "justified": {
+        "ability": "Justified",
+        "description": "When this creature is hit by a Dark-Type Physical or Special Move, its Attack increases by +2 Stages."
+    },
+    "keen eye": {
+        "ability": "Keen Eye",
+        "description": "This creature ignores the penalties of Light and Heavy Obscurement."
+    },
+    "klutz": {
+        "ability": "Klutz",
+        "description": "This creature cannot consume Held Items and they gain no effects from Held Items. "
+    },
+    "leaf guard": {
+        "ability": "Leaf Guard",
+        "description": "During Harsh Sunlight, this creature cannot be Poisoned, Burnt, Paralyzed, Frozen or put to Sleep."
+    },
+    "levitate": {
+        "ability": "Levitate",
+        "description": "This creature is not affected by Ground-type moves, Spikes, Toxic Spikes, and the Arena Trap Ability."
+    },
+    "libero": {
+        "ability": "Libero",
+        "description": "When this creature uses a Move, its Type changes to the Type of the Move before damage is calculated until this creature leaves Battle. "
+    },
+    "light metal": {
+        "ability": "Light Metal",
+        "description": "This creature's weight is halved. If this creature uses or is the target of a Move that considers its Size, this creature counts as one Size Category smaller. "
+    },
+    "lightning rod": {
+        "ability": "Lightning Rod",
+        "description": "This creature becomes the target of any Electric-Type Moves used by any other creature on the field. No other creature may be hit by these Moves. When hit by a Electric-Type Move, this creature takes no Wounds and instead increases their Special Attack by +2 Stages. "
+    },
+    "limber": {
+        "ability": "Limber",
+        "description": "This creature cannot be Paralyzed."
+    },
+    "lingering aroma": {
+        "ability": "Lingering Aroma",
+        "description": "When this creature is hit by a Contact Move, the attack's Ability becomes Lingering Aroma until they leave Battle. "
+    },
+    "liquid ooze": {
+        "ability": "Liquid Ooze",
+        "description": "When this creature is hit by a Move that would restore Wounds to the attacker, the attacker instead is delat a number of Wounds that they would regain."
+    },
+    "liquid voice": {
+        "ability": "Liquid Voice",
+        "description": "All sound-based moves used by the Pokémon to become Water type. Water type Pokémon also gain STAB from those moves"
+    },
+    "long reach": {
+        "ability": "Long Reach",
+        "description": "Contact Move used by this creature gain 4 Sq. of additional Range and are not considered Contact Moves for other effects and Abilities. "
+    },
+    "magic bounce": {
+        "ability": "Magic Bounce",
+        "description": "This creature is immune to Status Moves. If this creature would be the target of a Status Move, they instead immediately use that Move on their attacker, rolling as though they had initially used the Move. "
+    },
+    "magic guard": {
+        "ability": "Magic Guard",
+        "description": "Magic Guard prevents damage caused by effects including Weather, Poison, Trapped, Burn, effects like Curse and Leech Seed, entry hazards, recoil (except from Struggle), crash damage, and damage from using Mind Blown or Steel Beam. Magic Guard prevents the damage inflicted by a Life Orb, but the holder still gains the power boost."
+    },
+    "magician": {
+        "ability": "Magician",
+        "description": "When this creature hits with a Physical or Special Move, it may choose to steal the Held Item of one creature hit by the Move if the user is not already holding an Item. "
+    },
+    "magma armor": {
+        "ability": "Magma Armor",
+        "description": "This creature cannot be Frozen. Outside of combat, if this creature is in your Team at the same time as an Egg, the Egg's Egg Cycyle is halved (rounded down)."
+    },
+    "magnet pull": {
+        "ability": "Magnet Pull",
+        "description": "While this creature is in Battle, Steel-Type creatures cannot be Swapped or Returned without Fainting first."
+    },
+    "marvel scale": {
+        "ability": "Marvel Scale",
+        "description": "While this creature is Poisoned, Burned, Paralyzed, Frozen or Asleep, its Defense Die increases by 2 sizes. "
+    },
+    "mega launcher": {
+        "ability": "Mega Launcher",
+        "description": "All 'pulse' Moves this creature uses deal 1 additional Wound, or, if they cause a creature to regain Wounds, they regain an additial 1 Wound. 'Pulse' Moves include: Aura Sphere, Dark Pulse, Dragon Pulse, Heal Pulse, Origin Pulse, Terrain Pulse, and Water Pulse."
+    },
+    "merciless": {
+        "ability": "Merciless",
+        "description": "When this creature uses a Physical or Special Move against a Poisoned or Badly Poisoned creature, this creature always hits a Critical Hit. "
+    },
+    "mimicry": {
+        "ability": "Mimicry",
+        "description": "While this creature is in a Terrain, its Type becomes the Type of the Terrain. "
+    },
+    "mind's eye": {
+        "ability": "Mind's Eye",
+        "description": "This creature's attacking rolls are unaffected by penalties, including negative Stage changes, and ignore bonuses to its target's defending rolls, including positive Stage changes. This creature ignores Ghost-Type Pokemon's immunity to Normal- and Fighting-Type Moves. "
+    },
+    "minus": {
+        "ability": "Minus",
+        "description": "While this creature has an ally with the ability Plus on the battlefield, their Special Attack Die size is increased by two sizes and their Special Moves deal 1 additional Wound. "
+    },
+    "mirror armor": {
+        "ability": "Mirror Armor",
+        "description": "If this creature would have their Stages lowered by the Moves or Ability of another creature, that creature has their Stages lowered instead. "
+    },
+    "misty surge": {
+        "ability": "Misty Surge",
+        "description": "When this creature enters Battle, it uses Misty Terrain."
+    },
+    "mold breaker": {
+        "ability": "Mold Breaker",
+        "description": "This creature ignores the effects of the following Abilities: Aroma Veil, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Heatproof, Heavy Metal, Hyper Cutter, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightningrod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, White Smoke, Wonder Guard, Wonder Skin"
+    },
+    "moody": {
+        "ability": "Moody",
+        "description": "At the end of each of this creature's Turns, two of their Stats are picked at random. One is increased by +2 Stages and one is decreased by -2 Stages. If those Stages are already a +12 or -12, repsectively, then another Stat is selected. "
+    },
+    "motor drive": {
+        "ability": "Motor Drive",
+        "description": "When this creature would be hit by an Electric-Type Move, they are not affected by the Move and their Speed increases by +2 Stages. "
+    },
+    "moxie": {
+        "ability": "Moxie",
+        "description": "When this creature Faints another creature with a Move, its Attack increases by +2 Stages."
+    },
+    "multiscale": {
+        "ability": "Multiscale",
+        "description": "When this creature has no Wounds, it takes half as many Wounds from Moves, rounded down (minimum 1)."
+    },
+    "multitype": {
+        "ability": "Multitype",
+        "description": "While this creature is holding a Plate, its Type becomes the Type of the Plate."
+    },
+    "mummy": {
+        "ability": "Mummy",
+        "description": "When this creature is hit by a Contact Move, the attack's Ability becomes Mummy until they leave Battle. "
+    },
+    "mycelium might": {
+        "ability": "Mycelium Might",
+        "description": "During the Priority Phase, this creature may declare that it is using a Status Move. If it does so, it does not take its Turn until Turn Order 0 that Round and must use a Status Move on that Turn. This creature cannot use Status Moves without declaring them this way. When this creature uses Status Moves, it ignores all Moves, Items, or Abilities that would effect the success, damage, or effects of its Status Moves, such as Abilities that would render the defending creature immune to the user's Status Move. "
+    },
+    "natural cure": {
+        "ability": "Natural Cure",
+        "description": "When this creature is Returned, it loses all Status Conditions."
+    },
+    "neuroforce": {
+        "ability": "Neuroforce",
+        "description": "When this creature hits with a Physical or Special Move that the target creature is Vulnerable to, that Move deals 1 additional Wound to that creature. "
+    },
+    "neutralizing gas": {
+        "ability": "Neutralizing Gas",
+        "description": "When this creature enters Battle, the effects of all other Abilities are suppressed until this creature leaves Battle."
+    },
+    "no guard": {
+        "ability": "No Guard",
+        "description": "This creature does not make attacking or defending rolls. All Moves used by and targeting this creature automatically hit."
+    },
+    "normalize": {
+        "ability": "Normalize",
+        "description": "All Moves used by this creature are treated as Normal-Type. "
+    },
+    "oblivious": {
+        "ability": "Oblivious",
+        "description": "This creature cannot become Infatuated."
+    },
+    "opportunist": {
+        "ability": "Opportunist",
+        "description": "When an enemy creature would have one of its Stages increased, this creature also increases their Stages by the same amount. "
+    },
+    "oricalcum pulse": {
+        "ability": "Oricalcum Pulse",
+        "description": "When this creature enters Battle, it uses Sunny Day. While this creature is in Harsh Sunlight, it gains an Advantage to attacking rolls that use its Attack. "
+    },
+    "overcoat": {
+        "ability": "Overcoat",
+        "description": "This creature does not take Wounds from Weather effects."
+    },
+    "overgrow": {
+        "ability": "Overgrow",
+        "description": "While this creature has 3 or fewer Wounds remaining, their Grass-type attacks deal 1 additional Wound."
+    },
+    "own tempo": {
+        "ability": "Own Tempo",
+        "description": "This creature cannot become Confused."
+    },
+    "parental bond": {
+        "ability": "Parental Bond",
+        "description": "When this creature uses a Physical or Special Single Target Move, or a Area, Cone, Field, Line, or Radius Move that would target only a single creature, it may immediatly use that Move a second time on its Turn as if it was a Multi-Target Move, as long as the second use of the Move is also Single Target or only affects one creature. The second use of the Move does not consume a PP and, if it targets the same creature as the first use, does not add additional Wounds from S.T.A.B., Items, or Abilities."
+    },
+    "pastel veil": {
+        "ability": "Pastel Veil",
+        "description": "This creature and its allies cannot be Poisoned"
+    },
+    "perish body": {
+        "ability": "Perish Body",
+        "description": "When this creature is hit by a Contact Move, both this creature and the user will gain a 'Perish Count' of 3 until they leave Battle. At the end of each Round, each creature's Perish Count lowers by 1. When a creature's Perish Count becomes 0, that creature Faints. A creature with a Perish Count is not affected by this Ability. "
+    },
+    "pickpocket": {
+        "ability": "Pickpocket",
+        "description": "When this creature is hit by a Contact Move, it may choose to steal the Held Item the attacking creature if this creature is not already holding an Item. "
+    },
+    "pickup": {
+        "ability": "Pickup",
+        "description": "When another creature uses a consumable Item in Battle (such as a Berry or Herb), this creature regains that Item at the of the Battle."
+    },
+    "pixilate": {
+        "ability": "Pixilate",
+        "description": "Normal-Type Moves used by this creature are treated as Fairy-Type Moves and, if they are a Physical or Special Move, deal an addtional 1 Wound on a hit. "
+    },
+    "plus": {
+        "ability": "Plus",
+        "description": "While this creature has an ally with the ability Minus on the battlefield, their Special Attack Die size is increased by two sizes and their Special Moves deal 1 additional Wound. "
+    },
+    "poison heal": {
+        "ability": "Poison Heal",
+        "description": "This creature takes no damage from being Poisoned or Badly Poisoned and instead regains 1 Wound at the end of each Round if they are Poisoned or Badly Poisoned. "
+    },
+    "poison point": {
+        "ability": "Poison Point",
+        "description": "When this creature is hit with a Contact Move, the attacking creature may become Poisoned."
+    },
+    "poison puppeteer": {
+        "ability": "Poison Puppeteer",
+        "description": "If an enemy creature is Posioned or Badly Poisoned by this creature, that creature is also Confused for 1d4 + 1 Rounds."
+    },
+    "poison touch": {
+        "ability": "Poison Touch",
+        "description": "When this creature uses a Contact Move, it may Poison the target."
+    },
+    "power construct": {
+        "ability": "Power Construct",
+        "description": "At the end of the Round, if this creature has fewer that 5 Wounds of health remaining, it becomes its 'Complete Form' and regains 3 Wounds. "
+    },
+    "power of alchemy": {
+        "ability": "Power of Alchemy",
+        "description": "When an ally creature Faints while this creature is in Battle, this creature's Ability becomes the Ability of the Fainted creature."
+    },
+    "power spot": {
+        "ability": "Power Spot",
+        "description": "Physical and Special Moves used by ally creatures deal 1 additional Wound on a hit. "
+    },
+    "prankster": {
+        "ability": "Prankster",
+        "description": "Status Moves that this creature uses have Priority"
+    },
+    "pressure": {
+        "ability": "Pressure",
+        "description": "While this creature is in Battle, all other creature expend 1 additional PP whenever they use a Move."
+    },
+    "primordial sea": {
+        "ability": "Primordial Sea",
+        "description": "When this creature enters Battle, the Weather changes to Heavy Rain until this creature leaves Battle or until it loses this Ability. "
+    },
+    "prism armor": {
+        "ability": "Prism Armor",
+        "description": "This creature takes 1 fewer Wounds from Moves that they are vulnerable to."
+    },
+    "propeller tail": {
+        "ability": "Propeller Tail",
+        "description": "This creature ignores the effects of Moves and Abilities that would change the targets of their Moves, such as Follow Me and Storm Drain."
+    },
+    "protean": {
+        "ability": "Protean",
+        "description": "When this creature uses a Move, before the effects or Wounds of the Move are calculated, this loses all Types and this creature's Type becomes the same Type as the Move until this creature leaves Battle. "
+    },
+    "protosynthesis": {
+        "ability": "Protosynthesis",
+        "description": "When this creature is in Harsh Sunlight or holding a Booster Energy, it gains a bonus equal to its Rank to all rolls that use its highest-sized Stat Die. If multiple dice are tied, prioritze them in this order: Attack, Defense, Sp. Atk, Sp. Def, Speed, and HP."
+    },
+    "psychic surge": {
+        "ability": "Psychic Surge",
+        "description": "When this creature enters Battle, it uses Psychic Terrain."
+    },
+    "punk rock": {
+        "ability": "Punk Rock",
+        "description": "When using a \"sound-based\" Move that deals damage, this creature deals 1 additional Wound of damage. This creature takes 1 fewer Wounds from \"sound-based\" Moves. The following Moves are considered \"sound-based\": Alluring Voice, Boomburst, Bug Buzz, Clanging Scales, Disarming Voice, Echoed Voice, Eerie Spell, Hypervoice, Overdrive, Psychic Noise, Relic Song, Round, Snarl, Snore, Sparkling Aria, Torch Song, and Uproar."
+    },
+    "pure power": {
+        "ability": "Pure Power",
+        "description": "When this creature uses a Physical Move, it deals 2 additional  Wounds."
+    },
+    "purifying salt": {
+        "ability": "Purifying Salt",
+        "description": "When this creature would be hit by a Phyiscal or Special Move used by a Ghost-Type creature, they take 1 fewer Wound. This cnanot lower the total Wounds to less than 1. This creature cannot gain the following Status Conditions: Asleep, Burned, Frozen, Paralyzed, Poisoned, and Badly Poisoned."
+    },
+    "quark drive": {
+        "ability": "Quark Drive",
+        "description": "When this creature is in Electric Terrain or holding a Booster Energy, it gains a bonus equal to its Rank to all rolls that use its highest-sized Stat Die. If multiple dice are tied, prioritze them in this order: Attack, Defense, Sp. Atk, Sp. Def, Speed, and HP."
+    },
+    "queenly majesty": {
+        "ability": "Queenly Majesty",
+        "description": "If this creature becomes the target of a non-Field Move with Priority, that Move fails (action and PP are still consumed). "
+    },
+    "quick draw": {
+        "ability": "Quick Draw",
+        "description": "At the beginning of the Priority Phase, there is a 30% chance that this creature will be able to use their Moves as though they had Priority until the end of the Round. "
+    },
+    "quick feet": {
+        "ability": "Quick Feet",
+        "description": "While this creature is Poisoned, Burnt, Paralyzed, Frozen or Asleep, its Speed Die increases by two sizes. It does not suffer the penalty to Movement Speed or Turn Order from being Paralyzed while this Ability is active."
+    },
+    "rain dish": {
+        "ability": "Rain Dish",
+        "description": "While in Rain, at the end of each Round, this creature will regain one 1 Wound."
+    },
+    "rattled": {
+        "ability": "Rattled",
+        "description": "When this creature is hit by a Bug-Type, Dark-Type, or Ghost-Type Move, its Speed increases by +2 Stages.  "
+    },
+    "reciever": {
+        "ability": "Reciever",
+        "description": "When an lly creature Faints in Battle, this creature may immediately replace their Ability with the Ability of that ally creature until they leave Battle. "
+    },
+    "reckless": {
+        "ability": "Reckless",
+        "description": "If this creature uses a Move with Recoil damage, that Move deal 1 additional Wound."
+    },
+    "refrigerate": {
+        "ability": "Refrigerate",
+        "description": "Normal-Type Moves used by this creature are treated as Ice-Type Moves and, if they are a Physical or Special Move, deal an addtional 1 Wound on a hit. "
+    },
+    "regenerator": {
+        "ability": "Regenerator",
+        "description": "When this creature is Returned, it regains a 3 Wounds."
+    },
+    "ripen": {
+        "ability": "Ripen",
+        "description": "When this creature consumes a Berry in Battle, if possible, that Berry's effects are applied twice. "
+    },
+    "rivalry": {
+        "ability": "Rivalry",
+        "description": "If this creature targets another creature of the opposite gender with a Single target Move, that Move deals 1 additional Wound"
+    },
+    "rks system": {
+        "ability": "RKS System",
+        "description": "While this creature is holding a Memory, its Type becomes the Type of the Memory."
+    },
+    "rock head": {
+        "ability": "Rock Head",
+        "description": "This creature is not affected by Recoil damage."
+    },
+    "rocky payload": {
+        "ability": "Rocky Payload",
+        "description": "This creature's Rock-Type Physical and Special Moves deal 1 additional Wound on a hit. "
+    },
+    "rough skin": {
+        "ability": "Rough Skin",
+        "description": "Whenever this creature is struck with a Physical Move with a range of one Square, the attacking creature will recieve one Minor Wound."
+    },
+    "run away": {
+        "ability": "Run Away",
+        "description": "This creature does not need to roll to Flee from wild creature."
+    },
+    "sand force": {
+        "ability": "Sand Force",
+        "description": "This creature's Ground, Rock, and Steel Type moves deal 2 additional Wounds during a Sandstorm."
+    },
+    "sand rush": {
+        "ability": "Sand Rush",
+        "description": "While in a Sandstorm, their Movement Speed and Turn Order are doubled. "
+    },
+    "sand spit": {
+        "ability": "Sand Spit",
+        "description": "x"
+    },
+    "sand stream": {
+        "ability": "Sand Stream",
+        "description": "x"
+    },
+    "sand veil": {
+        "ability": "Sand Veil",
+        "description": "While in a Sandstorm, attacking creatures treat this creature as though they were Heavily Obscured. "
+    },
+    "sap sipper": {
+        "ability": "Sap Sipper",
+        "description": "When hit by a Grass-Type Move, instead of recieving Wounds or effects, this creature increases its Attack increases by +2 Stages. "
+    },
+    "schooling": {
+        "ability": "Schooling",
+        "description": "x"
+    },
+    "scrappy": {
+        "ability": "Scrappy",
+        "description": "This creature can hit Ghost-Type creature with Normal- and Fighting-Type Physical and Special Moves."
+    },
+    "screen cleaner": {
+        "ability": "Screen Cleaner",
+        "description": "x"
+    },
+    "seed sower": {
+        "ability": "Seed Sower",
+        "description": "x"
+    },
+    "serene grace": {
+        "ability": "Serene Grace",
+        "description": "When this creature makes rolls for the secondary effects of their Moves, they add their Rank an additional time to the attacking roll."
+    },
+    "shadow shield": {
+        "ability": "Shadow Shield",
+        "description": "x"
+    },
+    "shadow tag": {
+        "ability": "Shadow Tag",
+        "description": "While this creature is in Battle, enemy creatures cannot Swap of Flee, unless they have this Ability or use a Move, Ability, or Item that allows them to do so. "
+    },
+    "sharpness": {
+        "ability": "Sharpness",
+        "description": "x"
+    },
+    "shed skin": {
+        "ability": "Shed Skin",
+        "description": "At the end of their Turn, this creature has a 30% chance of healing itself of each Status Condition that it has."
+    },
+    "sheer force": {
+        "ability": "Sheer Force",
+        "description": "If this creature uses a Physical or Special Move with effects outside of applying Wounds to other creature (such as affecting Stages or applying Status Conditions) that Move does not apply those effects and instead deal 2 additional Wounds."
+    },
+    "shell armor": {
+        "ability": "Shell Armor",
+        "description": "This creature takes no additional Wounds from Critical Hits."
+    },
+    "shield dust": {
+        "ability": "Shield Dust",
+        "description": "If this creature would be affected by the additional effects of a Physical or Special Move (such as affecting Stages or applying Status Conditions) this creature is instead not effected by those additional effects."
+    },
+    "shields down": {
+        "ability": "Shields Down",
+        "description": "x"
+    },
+    "simple": {
+        "ability": "Simple",
+        "description": "When this creature has one of their Stages increased or decreased by a Move, Ability, or Item, they instead have their Stage increased or decreased by twice as many stages. "
+    },
+    "skill link": {
+        "ability": "Skill Link",
+        "description": "When this creature uses a move that hits a variable number of times, it hits the maximum number of times. Moves affected by this ability include: Arm Thrust, Barrage, Bone Rush, Bullet Seed, Comet Punch, Double Slap, Fury Attack, Fury Swipes, Icicle Spear, Pin Missile, Rock Blast, Spike Cannon, Tail Slap, Triple Kick, Water Shuriken."
+    },
+    "slow start": {
+        "ability": "Slow Start",
+        "description": "x"
+    },
+    "slush rush": {
+        "ability": "Slush Rush",
+        "description": "x"
+    },
+    "sniper": {
+        "ability": "Sniper",
+        "description": "When this creature lands a Critical Hit, that hit deal 2 additional Wounds."
+    },
+    "snow cloak": {
+        "ability": "Snow Cloak",
+        "description": "While in Hail, attacking creatures treat this creature as though they were Heavily Obscured. "
+    },
+    "snow warning": {
+        "ability": "Snow Warning",
+        "description": "x"
+    },
+    "solar power": {
+        "ability": "Solar Power",
+        "description": "While in Harsh Sunlight, this creature's Sp Attack Die increases by 2 sizes. At the end of each Round spent in Harsh Sunlight, this creature takes 2 Wounds. The creature does not take this damage if the Harsh Sunlight ends that turn."
+    },
+    "solid rock": {
+        "ability": "Solid Rock",
+        "description": "x"
+    },
+    "soul-heart": {
+        "ability": "Soul-Heart",
+        "description": "x"
+    },
+    "soundproof": {
+        "ability": "Soundproof",
+        "description": "This creature is immune to all 'sound-based' Moves, preventing all damage and effects: Boomburst, Bug Buzz, Chatter, Clanging Scales, Clangorous, Soulblaze, Confide, Disarming Voice, Echoed Voice, Grass Whistle, Growl, Hyper Voice, Metal Sound, Noble Roar, Parting Shot, Perish Song, Relic Song, Roar, Round, Screech, Sing, Snarl, Snore, Sparkling Aria, Supersonic, Uproar."
+    },
+    "speed boost": {
+        "ability": "Speed Boost",
+        "description": "x"
+    },
+    "stakeout": {
+        "ability": "Stakeout",
+        "description": "x"
+    },
+    "stall": {
+        "ability": "Stall",
+        "description": "x"
+    },
+    "stalwart": {
+        "ability": "Stalwart",
+        "description": "x"
+    },
+    "stamina": {
+        "ability": "Stamina",
+        "description": "x"
+    },
+    "stance change": {
+        "ability": "Stance Change",
+        "description": "x"
+    },
+    "static": {
+        "ability": "Static",
+        "description": "When this creature is hit with a Contact Move, the attacking creature may become Paralyzed."
+    },
+    "steadfast": {
+        "ability": "Steadfast",
+        "description": "Whenever this creature Flinches, this creature's Speed raises by +2 Stages. "
+    },
+    "steam engine": {
+        "ability": "Steam Engine",
+        "description": "x"
+    },
+    "steelworker": {
+        "ability": "Steelworker",
+        "description": "x"
+    },
+    "steely spirit": {
+        "ability": "Steely Spirit",
+        "description": "x"
+    },
+    "stench": {
+        "ability": "Stench",
+        "description": "When this creature hits a target with a Contact Move, the target may become Flinched."
+    },
+    "sticky hold": {
+        "ability": "Sticky Hold",
+        "description": "This creature cannot have their Items taken or switched."
+    },
+    "storm drain": {
+        "ability": "Storm Drain",
+        "description": "This creature becomes the target of any Water Type Moves used by any other creature on the field. No other creature may be hit by these Moves. When hit by a Water Type Move, this creature takes no Wounds and instead increases their Special Attack raised by +2 Stages. "
+    },
+    "strong jaw": {
+        "ability": "Strong Jaw",
+        "description": "This creature's 'biting' Moves deal 2 additional Wounds. These Moves are affected: Bite, Crunch, Fire Fang, Fishious Rend, Hyper Fang, Ice Fang, Jaw Fang, Poison Fang, Psychic Fangs, Thunder Fang"
+    },
+    "sturdy": {
+        "ability": "Sturdy",
+        "description": "The first time each Battle that an effect would reduce this creature to 0 Wounds, they are instead reduced to 1 Wound. "
+    },
+    "suction cups": {
+        "ability": "Suction Cups",
+        "description": "This creature cannot be forcebly Returned or Swapped by an opponent's Moves or Abilities, and cannot be Returned by use of an item. "
+    },
+    "super luck": {
+        "ability": "Super Luck",
+        "description": "When making an attack, the user lowers the amount that they need to roll over a defending roll to Critically Hit by 3."
+    },
+    "supersweet syrup": {
+        "ability": "Supersweet Syrup",
+        "description": "x"
+    },
+    "supreme overlord": {
+        "ability": "Supreme Overlord",
+        "description": "x"
+    },
+    "surge surfer": {
+        "ability": "Surge Surfer",
+        "description": "While this creature is in an Electric Terrain, their Movement Speed and Turn Order are doubled."
+    },
+    "swarm": {
+        "ability": "Swarm",
+        "description": "While this creature has 3 or fewer Wounds remaining, its Bug-Type moves each deal 2 additional Wounds."
+    },
+    "sweet veil": {
+        "ability": "Sweet Veil",
+        "description": "x"
+    },
+    "swift swim": {
+        "ability": "Swift Swim",
+        "description": "While this creature is in Rain, their Movement Speed and Turn Order are doubled. "
+    },
+    "sword of ruin": {
+        "ability": "Sword of Ruin",
+        "description": "x"
+    },
+    "symbiosis": {
+        "ability": "Symbiosis",
+        "description": "x"
+    },
+    "synchronize": {
+        "ability": "Synchronize",
+        "description": "If an opponent causes this creature to become Burnt, Paralyzed, or Poisoned, the triggering creature also gains that Status Condition."
+    },
+    "tablets of ruin": {
+        "ability": "Tablets of Ruin",
+        "description": "x"
+    },
+    "tangled feet": {
+        "ability": "Tangled Feet",
+        "description": "While this creature is Confused, they gain an Advantage to their defensive rolls."
+    },
+    "tangling hair": {
+        "ability": "Tangling Hair",
+        "description": "x"
+    },
+    "technician": {
+        "ability": "Technician",
+        "description": "When this creature uses Physical or Special Moves that have a base Wound damage of 2 Wounds or fewer, those Moves deal 1 additional Wound."
+    },
+    "telepathy": {
+        "ability": "Telepathy",
+        "description": "x"
+    },
+    "tera shell": {
+        "ability": "Tera Shell",
+        "description": "x"
+    },
+    "tera shift": {
+        "ability": "Tera Shift",
+        "description": "x"
+    },
+    "teraform zero": {
+        "ability": "Teraform Zero",
+        "description": "x"
+    },
+    "teravolt": {
+        "ability": "Teravolt",
+        "description": "x"
+    },
+    "thermal exchange": {
+        "ability": "Thermal Exchange",
+        "description": "x"
+    },
+    "thick fat": {
+        "ability": "Thick Fat",
+        "description": "Damage from Ice and Fire Type Moves is reduced by one Wound."
+    },
+    "tinted lens": {
+        "ability": "Tinted Lens",
+        "description": "When this creature uses a Move on a creature that Resists that Move damage type, they ignore the reduction in Wound damage."
+    },
+    "torrent": {
+        "ability": "Torrent",
+        "description": "While this creature has 3 or fewer Wounds remaining, their Water-Type attacks deal 1 additional Wound."
+    },
+    "tough claws": {
+        "ability": "Tough Claws",
+        "description": "Contact Moves that this creature uses deal 1 additional Wound on a hit. "
+    },
+    "toxic boost": {
+        "ability": "Toxic Boost",
+        "description": "x"
+    },
+    "toxic chain": {
+        "ability": "Toxic Chain",
+        "description": "x"
+    },
+    "toxic debris": {
+        "ability": "Toxic Debris",
+        "description": "When this creature is hit by a Physical Move, it uses Toxic Spikes. If there are already two Toxic Spikes on the opponents side of the field, this Ability does not activate. "
+    },
+    "trace": {
+        "ability": "Trace",
+        "description": "When this creature enters Battle, it designates one other creature in Battle. This creature gains the designated creature's Ability until they leave Battle. "
+    },
+    "transistor": {
+        "ability": "Transistor",
+        "description": "x"
+    },
+    "traige": {
+        "ability": "Traige",
+        "description": "x"
+    },
+    "truant": {
+        "ability": "Truant",
+        "description": "x"
+    },
+    "turboblaze": {
+        "ability": "Turboblaze",
+        "description": "x"
+    },
+    "unaware": {
+        "ability": "Unaware",
+        "description": "This creature ignores the changes in Stat Stages of the other creature in Battle."
+    },
+    "unburden": {
+        "ability": "Unburden",
+        "description": "When this creature consumes or loses its Held Item in battle, it doubles its Turn Order and Movement Speed until this creature leaves Battle. If a creature affected this way gains a new Held Item, their Turn Order and Movement Speed is halved (rounded down)."
+    },
+    "unnerve": {
+        "ability": "Unnerve",
+        "description": "While this creature is in Battle, enemy creature cannot eat Berries."
+    },
+    "unseen fist": {
+        "ability": "Unseen Fist",
+        "description": "x"
+    },
+    "vessel of ruin": {
+        "ability": "Vessel of Ruin",
+        "description": "x"
+    },
+    "victory star": {
+        "ability": "Victory Star",
+        "description": "x"
+    },
+    "vital spirit": {
+        "ability": "Vital Spirit",
+        "description": "This creature cannot be put to Sleep. Moves that force this creature to Sleep, such as Rest, fail if used by a creature with this ability. If this creature is Asleep, it immediately awakens."
+    },
+    "volt absorb": {
+        "ability": "Volt Absorb",
+        "description": "When hit by an Electric-Type Move, instead of recieving Wounds, this creature heals by 3 Wounds."
+    },
+    "wandering spirit": {
+        "ability": "Wandering Spirit",
+        "description": "x"
+    },
+    "water absorb": {
+        "ability": "Water Absorb",
+        "description": "When hit by a Water-Type Move, instead of recieving Wounds, this creature heals by 3 Wounds."
+    },
+    "water bubble": {
+        "ability": "Water Bubble",
+        "description": "x"
+    },
+    "water compaction": {
+        "ability": "Water Compaction",
+        "description": "x"
+    },
+    "water veil": {
+        "ability": "Water Veil",
+        "description": "This creature cannot be Burnt."
+    },
+    "weak armor": {
+        "ability": "Weak Armor",
+        "description": "When this creature is hit by a Physical Move, their Defense is lowered by -2 Stages, and their Speed raises by +2 Stages. "
+    },
+    "well-baked body": {
+        "ability": "Well-Baked Body",
+        "description": "x"
+    },
+    "white smoke": {
+        "ability": "White Smoke",
+        "description": "x"
+    },
+    "wimp out": {
+        "ability": "Wimp Out",
+        "description": "x"
+    },
+    "wind power": {
+        "ability": "Wind Power",
+        "description": "x"
+    },
+    "wind rider": {
+        "ability": "Wind Rider",
+        "description": "x"
+    },
+    "wonder guard": {
+        "ability": "Wonder Guard",
+        "description": "This Pokémon is immune to Physical and Special Moves of Types that it is not vulnerable to. This Ability cannot be swapped, changed, or removed. If this creature is a Shedinja, it can only sustain a maximum of 1 Wound, rather than 9, before Fainting. "
+    },
+    "wonder skin": {
+        "ability": "Wonder Skin",
+        "description": "All Moves that target this creature treat it as though it is Heavily Obscured. "
+    },
+    "zen mode": {
+        "ability": "Zen Mode",
+        "description": "x"
+    },
+    "zero to hero": {
+        "ability": "Zero to Hero",
+        "description": "x"
+    }
+}

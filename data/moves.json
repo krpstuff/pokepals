@@ -62,7 +62,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 4,
-    "descEffects": "The user does a physical slice at their enemy. Each successive time the user hits and enemy with this Move, it deals an additional Minor Wound for each hit beyond the first."
+    "descEffects": "The user does a physical slice at their enemy. Each successive time the user hits and enemy with this Move, it deals an additional 1 Wound for each hit beyond the first."
   },
   "leech life": {
     "move": "Leech Life",
@@ -114,7 +114,7 @@
     "targetType": "Multi-Target",
     "range": "6 Sq.",
     "pp": 4,
-    "descEffects": "The user fires hardened needles at 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user fires hardened needles at 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "pounce": {
     "move": "Pounce",
@@ -155,8 +155,8 @@
     "pp": 4,
     "descEffects": "The user picks a point within range and barrels through it, rolling over each creature between them and the point. Creatures hit by this Move may be Flinched. "
   },
-  "twinneedle": {
-    "move": "Twinneedle",
+  "twineedle": {
+    "move": "Twineedle",
     "type": "Bug",
     "category": "Physical",
     "priority": "No",
@@ -166,7 +166,7 @@
     "targetType": "Multi-Target",
     "range": "1 Sq.",
     "pp": 4,
-    "descEffects": "The user jabs at up to two targets with a stinger. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user jabs at up to two targets with a stinger. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "u-turn": {
     "move": "U-Turn",
@@ -175,7 +175,7 @@
     "priority": "No",
     "contact": "Yes",
     "autoHit": "No",
-    "wounds": 1,
+    "wounds": 2,
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 4,
@@ -413,7 +413,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user strikes the target with an attack full of dark-infused energy. If the target has already taken Wounds this Turn, this Move deals twice the number of Wounds. "
+    "descEffects": "The user strikes the target with an attack full of dark-infused energy. If the target has already taken Wounds this Turn, this Move deals an additional 2 Wounds."
   },
   "beat up": {
     "move": "Beat Up",
@@ -491,7 +491,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 3,
-    "descEffects": "The user grasps the target in their fangs, and violently crunches down. The attack may lower the target's Defense by -2 Stages. "
+    "descEffects": "The user grasps the target in their fangs, and violently crunches down. The attack may lower the target's HP and Defense by -2 Stages. "
   },
   "darkest lariat": {
     "move": "Darkest Lariat",
@@ -621,7 +621,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 1,
-    "descEffects": "The user lashes out to vent its frustration toward the target. If any of the target's Stages have been lowered this Round, this Move deals twice as many Wounds. "
+    "descEffects": "The user lashes out to vent its frustration toward the target. If any of the target's Stages have been lowered this Round, this Move deals an additional 3 Wounds."
   },
   "night slash": {
     "move": "Night Slash",
@@ -647,7 +647,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user stores power, then attacks. If the target has a higher Turn Order than the user, this Move deals twice the number of Wounds."
+    "descEffects": "The user stores power, then attacks. If the target has a higher Turn Order than the user, this Move deals an additional 2 Wounds."
   },
   "power trip": {
     "move": "Power Trip",
@@ -686,7 +686,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 4,
-    "descEffects": "The user strikes out at the target with dark-infused energy. If a creature within range of the user would Swap or Return, and the user has not yet taken their Turn, the user may immediately declare the use of this Move and take their Turn. If the target is hit while this Move is being used this way, this Move deals twice the number of Wounds. "
+    "descEffects": "The user strikes out at the target with dark-infused energy. If a creature within range of the user would Swap or Return, and the user has not yet taken their Turn, the user may immediately declare the use of this Move and take their Turn. If the target is hit while this Move is being used this way, this Move deals an additional 2 Wounds."
   },
   "sucker punch": {
     "move": "Sucker Punch",
@@ -974,6 +974,19 @@
     "pp": 2,
     "descEffects": "The user prepares themselves to snatch away the potential of their foes. Until the end of the turn, if a creature within range would use a Status Move with a targeting type of Self, their Move fails and the user of this Move uses that Move instead. "
   },
+  "switcheroo": {
+    "move": "Switcheroo",
+    "type": "Dark",
+    "category": "Status",
+    "priority": "No",
+    "contact": "No",
+    "autoHit": "No",
+    "wounds": "-",
+    "targetType": "Single Target",
+    "range": "1 Sq.",
+    "pp": 2,
+    "descEffects": "The user and the target swap Held Items until the Battle ends. If only one of those creatures has a Held Item, it is moved to the other. If neither creatures has a Held Item, this Move fails. "
+  },
   "taunt": {
     "move": "Taunt",
     "type": "Dark",
@@ -1050,7 +1063,7 @@
     "targetType": "Multi-Target",
     "range": "8 Sq.",
     "pp": 2,
-    "descEffects": "The user summons a small dragons to strike up to two different targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user summons a small dragons to strike up to two different targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "dragon hammer": {
     "move": "Dragon Hammer",
@@ -1076,7 +1089,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user tackles the target while exhibiting overwhelming menace. It may also make the target Flinch. If the target has used Minimize, this Move hits without fail, requiring no roll, and deals twice the number of Wounds. "
+    "descEffects": "The user tackles the target while exhibiting overwhelming menace. It may also make the target Flinch. If the target has used Minimize, this Move hits without fail, requiring no roll, and deals an additional 4 Wounds."
   },
   "dragon tail": {
     "move": "Dragon Tail",
@@ -1102,10 +1115,10 @@
     "targetType": "Multi-Target",
     "range": "1 Sq.",
     "pp": 3,
-    "descEffects": "The user attacks by hitting up to two targets with brutal strikes. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user attacks by hitting up to two targets with brutal strikes. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
-  "glaive chop": {
-    "move": "Glaive Chop",
+  "glaive rush": {
+    "move": "Glaive Rush",
     "type": "Dragon",
     "category": "Physical",
     "priority": "No",
@@ -1115,7 +1128,7 @@
     "targetType": "Line",
     "range": "10 Sq.",
     "pp": 1,
-    "descEffects": "The user recklessly launches themself like a glaive at a point this Move's range, requiring no movement, and strikes each creature in that line. The user lands at the end of this Move's range or until this strike a solid surface, like a wall or stone. Until the beginning of the user's next Turn, all Physical and Special Moves that target the user hit without fail, requiring no rolls, and deal twice as many Wounds. "
+    "descEffects": "The user recklessly launches themself like a glaive at a point this Move's range, requiring no movement, and strikes each creature in that line. The user lands at the end of this Move's range or until this strike a solid surface, like a wall or stone. Until the beginning of the user's next Turn, all Physical and Special Moves that target the user hit without fail, requiring no rolls, and deal additional Wounds equal to their base Wound amounts."
   },
   "order up": {
     "move": "Order Up",
@@ -1154,7 +1167,7 @@
     "targetType": "Multi-Target",
     "range": "8 Sq.",
     "pp": 4,
-    "descEffects": "The user shoots scales at 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. If this Move hits, the user increases their Speed by +2 Stages and lowers their Defense by -2 Stages. This additional effect only triggers once per use of this Move. "
+    "descEffects": "The user shoots scales at 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. If this Move hits, the user increases their Speed by +2 Stages and lowers their Defense by -2 Stages. This additional effect only triggers once per use of this Move. "
   },
   "clanging scales": {
     "move": "Clanging Scales",
@@ -1245,7 +1258,7 @@
     "targetType": "Line",
     "range": "12 Sq.",
     "pp": 1,
-    "descEffects": "The user release a beam of Dynamax Energy. If the user is Dynamaxed or Gigantamaxed, this Move deals twice as many Wounds. "
+    "descEffects": "The user release a beam of Dynamax Energy. If the user is Dynamaxed or Gigantamaxed, this Move deals an additional 4 Wounds."
   },
   "eternabeam": {
     "move": "Eternabeam",
@@ -1271,7 +1284,7 @@
     "targetType": "Line",
     "range": "8 Sq.",
     "pp": 1,
-    "descEffects": "The user shoots a beam of light to inflict damage. There is a 30% chance that this Move will deal twice as many Wounds. "
+    "descEffects": "The user shoots a beam of light to inflict damage. There is a 30% chance that this Move will deal an additional 3 Wounds."
   },
   "roar of time": {
     "move": "Roar of Time",
@@ -1310,7 +1323,7 @@
     "targetType": "Field",
     "range": "-",
     "pp": 4,
-    "descEffects": "The user creates a massive funnel of wind that affects the entire Field. Creatures hit by this Move may Flinch."
+    "descEffects": "The user creates a massive funnel of wind that affects the entire Field. Creatures hit by this Move may Flinch. Creatures do not benefit from the Full Obscurement of being in the sky when making defending rolls against this Move, and this Move can target creatures under the effects of Fly, Bounce, and Sky Drop. When a creature under the effect of one of those Moves is hit this way, they are dealt an additional 2 Wounds on a hit. "
   },
   "clangorous soul": {
     "move": "Clangorous Soul",
@@ -1375,7 +1388,7 @@
     "targetType": "Single Target",
     "range": "-",
     "pp": 2,
-    "descEffects": "The user stabs at the target with an electrified beak. If the target has not yet taken their Turn, this Move deals twice as many Wounds. "
+    "descEffects": "The user stabs at the target with an electrified beak. If the target has not yet taken their Turn, this Move deals an additional 3 Wounds."
   },
   "bolt strike": {
     "move": "Bolt Strike",
@@ -1414,7 +1427,7 @@
     "targetType": "Radius",
     "range": "4 Sq.",
     "pp": 1,
-    "descEffects": "The user throws down a giant thunderbolt. If the Move most recently used was Fusion Flare, this Move deals twice as many Wounds. "
+    "descEffects": "The user throws down a giant thunderbolt. If the Move most recently used was Fusion Flare, this Move deals an additional 4 Wounds"
   },
   "nuzzle": {
     "move": "Nuzzle",
@@ -1427,7 +1440,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 4,
-    "descEffects": "The user attacks by nuzzling its cheeks against the target. This Move may Paralyze the target. "
+    "descEffects": "The user attacks by nuzzling its cheeks against the target. This Move Paralyzes the target. "
   },
   "plasma fists": {
     "move": "Plasma Fists",
@@ -1687,7 +1700,7 @@
     "targetType": "Single Target",
     "range": "10 Sq.",
     "pp": 4,
-    "descEffects": "The user attacks with electric voltage rising from the ground. When an Electric Terrain is active, this Move deals twice the number of Wounds."
+    "descEffects": "The user attacks with electric voltage rising from the ground. When an Electric Terrain is active, this Move deals an additional 3 Wounds."
   },
   "shock wave": {
     "move": "Shock Wave",
@@ -1713,7 +1726,7 @@
     "targetType": "Area",
     "range": "10 Sq.",
     "pp": 2,
-    "descEffects": "The user brings down a wicked thunderbolt at a point within range, striking all creatures within a 3 Sq. radius of the bolt. Creatures hit by this Move may be Paralyzed. "
+    "descEffects": "The user brings down a wicked thunderbolt at a point within range, striking all creatures within a 3 Sq. radius of the bolt. Creatures hit by this Move may be Paralyzed. Creatures do not benefit from the Full Obscurement of being in the sky when making defending rolls against this Move, and this Move can target creatures under the effects of Fly, Bounce, and Sky Drop. "
   },
   "thunder cage": {
     "move": "Thunder Cage",
@@ -1817,7 +1830,7 @@
     "targetType": "Self",
     "range": "-",
     "pp": 4,
-    "descEffects": "The user stores energy within themselves. The user's Sp. Defense increases by +2 Stages. During the next Round, if the next Move that they use is Electric-Type, that Move deals twice as many Wounds."
+    "descEffects": "The user stores energy within themselves. The user's Sp. Defense increases by +2 Stages. During the next Round, if the next Move that they use is an Electric-Type Physical or Special Move, that Move deals additional Wounds equal to its base Wound amount."
   },
   "eerie impulse": {
     "move": "Eerie Impulse",
@@ -2064,7 +2077,7 @@
     "targetType": "Area",
     "range": "8 Sq.",
     "pp": 3,
-    "descEffects": "The user hurls a beam of moon energy at a 2 Sq. radius point within range. Creatures hit by this Move may have their Sp. Defense lowered by -2 Stages. "
+    "descEffects": "The user hurls a beam of moon energy at a 2 Sq. radius point within range. Creatures hit by this Move may have their Sp. Attack lowered by -2 Stages. "
   },
   "nature's madness": {
     "move": "Nature's Madness",
@@ -2285,7 +2298,7 @@
     "targetType": "Multi-Target",
     "range": "1 Sq.",
     "pp": 4,
-    "descEffects": "The user sends straight-arm punches at 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user sends straight-arm punches at 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "axe kick": {
     "move": "Axe Kick",
@@ -2415,7 +2428,7 @@
     "targetType": "Multi-Target",
     "range": "1 Sq.",
     "pp": 6,
-    "descEffects": "The user quickly kicks twice, hitting up to two targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user quickly kicks twice, hitting up to two targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "drain punch": {
     "move": "Drain Punch",
@@ -2610,7 +2623,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user channels their rage into a strike. If the user has been dealt Wounds by the target using a Physical or Special Move this Round, this Move deals twice as many Wounds. "
+    "descEffects": "The user channels their rage into a strike. If the user has been dealt Wounds by the target using a Physical or Special Move this Round, this Move deals an additional 2 Wounds."
   },
   "reversal": {
     "move": "Reversal",
@@ -2766,7 +2779,7 @@
     "targetType": "Multi-Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user attacks three times in sequence, hitting up to three targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user attacks three times in sequence, hitting up to three targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "upper hand": {
     "move": "Upper Hand",
@@ -2787,7 +2800,7 @@
     "category": "Physical",
     "priority": "No",
     "contact": "Yes",
-    "autoHit": "No",
+    "autoHit": "Yes",
     "wounds": 3,
     "targetType": "Single Target",
     "range": "1 Sq.",
@@ -2805,7 +2818,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user slaps the target. If the target is Asleep, this Move deals twice as many Wounds and wakes up the target. "
+    "descEffects": "The user slaps the target. If the target is Asleep, this Move deals an additional 3 Wounds and wakes up the target. "
   },
   "aura sphere": {
     "move": "Aura Sphere",
@@ -2883,7 +2896,7 @@
     "targetType": "Self",
     "range": "-",
     "pp": 4,
-    "descEffects": "The user tenses its muscles to bulk up. The user's Attack and Defense increase by +2 Stages. "
+    "descEffects": "The user tenses its muscles to bulk up. The user's HP, Attack, and Defense increase by +2 Stages. "
   },
   "coaching": {
     "move": "Coaching",
@@ -3145,8 +3158,8 @@
     "pp": 1,
     "descEffects": "The user razes with a mystical fire of great intensity. The target may be Burned. If the user is Frozen, they may still declare a use of the Move and end the Frozen condition on themself."
   },
-  "sizzly side": {
-    "move": "Sizzly Side",
+  "sizzly slide": {
+    "move": "Sizzly Slide",
     "type": "Fire",
     "category": "Physical",
     "priority": "No",
@@ -3169,7 +3182,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user is spurred by desperation to attack the target. If the user missed with another Move on the previous Round, this Move deals twice as many Wounds. "
+    "descEffects": "The user is spurred by desperation to attack the target. If the user missed with another Move on the previous Round, this Move dealsan additional 3 Wounds."
   },
   "v-create": {
     "move": "V-create",
@@ -3312,7 +3325,7 @@
     "targetType": "Area",
     "range": "6 Sq.",
     "pp": 2,
-    "descEffects": "The user creates a 2 Sq. radius column of fire within range. If an ally creature uses Water Pledge or Grass Pledge and the user has not yet taken their turn, the user may skip their Turn this Round, expend one PP from this Move,  and have that Water Pledge or Grass Pledge deal twice as many Wounds. If Water Pledge is affected this way, a rainbow appears over the field for 2 Rounds that grants ally creatures the Serene Grace ability (in addition to their other abilities). If Grass Pledge is affected this way, a sea of fire appears on the battlefield for 2 Rounds that deals 1 Wound to each non-Fire-Type Pokemon at the end of each Round. If a rainbow, sea of fire, or swamp are already present on the battlefield (by being summoned by a Pledge move), then this Move does not create a rainbow or sea of fire. "
+    "descEffects": "The user creates a 2 Sq. radius column of fire within range. If an ally creature uses Water Pledge or Grass Pledge and the user has not yet taken their turn, the user may skip their Turn this Round, expend one PP from this Move,  and have that Water Pledge or Grass Pledge deal an additional 3 Wounds. If Water Pledge is affected this way, a rainbow appears over the field for 2 Rounds that grants ally creatures the Serene Grace ability (in addition to their other abilities). If Grass Pledge is affected this way, a sea of fire appears on the battlefield for 2 Rounds that deals 1 Wound to each non-Fire-Type Pokemon at the end of each Round. If a rainbow, sea of fire, or swamp are already present on the battlefield (by being summoned by a Pledge move), then this Move does not create a rainbow or sea of fire. "
   },
   "fire spin": {
     "move": "Fire Spin",
@@ -3364,7 +3377,7 @@
     "targetType": "Radius",
     "range": "4 Sq.",
     "pp": 1,
-    "descEffects": "The user throws down a giant flame. If the Move most recently used was Fusion Bolt, this Move deals twice as many Wounds. "
+    "descEffects": "The user throws down a giant flame. If the Move most recently used was Fusion Bolt, this Move deals an additional 4 Wounds"
   },
   "heat wave": {
     "move": "Heat Wave",
@@ -3559,7 +3572,7 @@
     "targetType": "Radius",
     "range": "1 Sq.",
     "pp": 3,
-    "descEffects": "The user nimbly strikes all creatures around it. If the user is not holding a Held Item, this Move deals twice as many Wounds. "
+    "descEffects": "The user nimbly strikes all creatures around it. If the user is not holding a Held Item, this Move deals an additional 2 Wounds."
   },
   "aerial ace": {
     "move": "Aerial Ace",
@@ -3650,7 +3663,7 @@
     "targetType": "Multi-Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user beats its wings twice, striking up to two targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities."
+    "descEffects": "The user beats its wings twice, striking up to two targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.."
   },
   "floaty fall": {
     "move": "Floaty Fall",
@@ -3819,7 +3832,7 @@
     "targetType": "Single Target",
     "range": "6 Sq.",
     "pp": 7,
-    "descEffects": "The user strikes with a strong gust of wind. "
+    "descEffects": "The user strikes with a strong gust of wind. Creatures do not benefit from the Full Obscurement of being in the sky when making defending rolls against this Move, and this Move can target creatures under the effects of Fly, Bounce, and Sky Drop. When a creature under the effect of one of those Moves is hit this way, they are dealt an additional 2 Wounds on a hit. "
   },
   "hurricane": {
     "move": "Hurricane",
@@ -3831,8 +3844,8 @@
     "wounds": 4,
     "targetType": "Field",
     "range": "-",
-    "pp": 4,
-    "descEffects": "The user creates an engulfing hurricane that attacks all enemy creatures on the field. Creatures hit by this Move may be Confused for 1d4 + 1 Rounds. This Move hits creatures high in the sky, as per the Bounce, Fly and Sky Drop moves. If the Weather is Rain, Hurricane does not require a roll to hit. If the Weather is not clear or Rain, this Move has a Disadvantage to its attacking roll. "
+    "pp": 2,
+    "descEffects": "The user creates an engulfing hurricane that attacks all enemy creatures on the field. Creatures hit by this Move may be Confused for 1d4 + 1 Rounds. Creatures do not benefit from the Full Obscurement of being in the sky when making defending rolls against this Move, and this Move can target creatures under the effects of Fly, Bounce, and Sky Drop. If the Weather is Rain, Hurricane does not require a roll to hit. If the Weather is not clear or Rain, this Move has a Disadvantage to its attacking roll. "
   },
   "oblivion wing": {
     "move": "Oblivion Wing",
@@ -4118,7 +4131,7 @@
     "targetType": "Single Target",
     "range": "10 Sq.",
     "pp": 2,
-    "descEffects": "The user releases a relentless ghostly attack at the target. If the target has a Status Condition, this Move deals twice as many Wounds. "
+    "descEffects": "The user releases a relentless ghostly attack at the target. If the target has a Status Condition, this Move deals an additional 2 Wounds."
   },
   "infernal parade": {
     "move": "Infernal Parade",
@@ -4131,7 +4144,7 @@
     "targetType": "Radius",
     "range": "5 Sq.",
     "pp": 3,
-    "descEffects": "The user attacks with myriad fireballs, attacking each enemy creature in range. If a creature hit by this Move has a Status Condition, this Move deals twice as many Wounds. Creatures hit by this Move may be Burned. "
+    "descEffects": "The user attacks with myriad fireballs, attacking each enemy creature in range. If a creature hit by this Move has a Status Condition, this Move deals an additional 2 Wounds. Creatures hit by this Move may be Burned. "
   },
   "moongeist beam": {
     "move": "Moongeist Beam",
@@ -4300,7 +4313,7 @@
     "targetType": "Multi-Target",
     "range": "8 Sq.",
     "pp": 5,
-    "descEffects": "The user fires hard seeds at 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user fires hard seeds at 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "drum beating": {
     "move": "Drum Beating",
@@ -4352,7 +4365,7 @@
     "targetType": "Single Target",
     "range": "6 Sq.",
     "pp": 2,
-    "descEffects": "The user floats an apple high above the target and drops it down on them. The target's Defense lowers by -2 Stages. "
+    "descEffects": "The user floats an apple high above the target and drops it down on them. The target's Defense lowers by -2 Stages. If the Move Gravity is in effect, this Move deals an additional 3 Wounds"
   },
   "horn leech": {
     "move": "Horn Leech",
@@ -4664,7 +4677,7 @@
     "targetType": "Area",
     "range": "6 Sq.",
     "pp": 2,
-    "descEffects": "The user creates a 2 Sq. radius column of razor-sharp grass within range. If an ally creature uses Water Pledge or Fire Pledge and the user has not yet taken their turn, the user may skip their Turn this Round, expend one PP from this Move, and have that Water Pledge or Fire Pledge deal twice as many Wounds. If Water Pledge is affected this way, a swamp appears on the field for 2 Rounds that quarter's enemy Pokemon's Turn Order (rounded down). If Fire Pledge is affected this way, a sea of fire appears on the battlefield for 2 Rounds that deals 1 Wound to each non-Fire-Type Pokemon at the end of each Round. If a rainbow, sea of fire, or swamp are already present on the battlefield (by being summoned by a Pledge move), then this Move does not create a swamp or sea of fire. "
+    "descEffects": "The user creates a 2 Sq. radius column of razor-sharp grass within range. If an ally creature uses Water Pledge or Fire Pledge and the user has not yet taken their turn, the user may skip their Turn this Round, expend one PP from this Move, and have that Water Pledge or Fire Pledge deal an additional 3 Wounds. If Water Pledge is affected this way, a swamp appears on the field for 2 Rounds that quarter's enemy Pokemon's Turn Order (rounded down). If Fire Pledge is affected this way, a sea of fire appears on the battlefield for 2 Rounds that deals 1 Wound to each non-Fire-Type Pokemon at the end of each Round. If a rainbow, sea of fire, or swamp are already present on the battlefield (by being summoned by a Pledge move), then this Move does not create a swamp or sea of fire. "
   },
   "leaf storm": {
     "move": "Leaf Storm",
@@ -4872,7 +4885,7 @@
     "targetType": "Self",
     "range": "-",
     "pp": 4,
-    "descEffects": "The user lays down roots to draw in nutrients. At the end of each Round, the regains 1 Wound. The user's Movement Speed becomes 0 and the cannot be Swapped or Returned until they have Fainted or the Battle ends. "
+    "descEffects": "The user lays down roots to draw in nutrients. At the end of each Round, the regains 1 Wound and increases their HP by +2 Stages. The user's Movement Speed becomes 0 and cannot increase. They cannot be Swapped or Returned until they have Fainted or the Battle ends. If the user is already under the effects of this Move, this Move fails. "
   },
   "jungle healing": {
     "move": "Jungle Healing",
@@ -4898,7 +4911,7 @@
     "targetType": "Cone",
     "range": "3 Sq.",
     "pp": 2,
-    "descEffects": "The user releases several seeds that may stick onto enemy creatures. Creatures hit by this Move become 'Seeded' until they leave Battle. A 'Seeded' creature takes 1 Wound at the end of each Round. The user regains 1 Wound for each Wound dealt this way. "
+    "descEffects": "The user releases several seeds that may stick onto enemy creatures. Creatures hit by this Move become 'Seeded' until they leave Battle. At the end of each Round, if any creatures that they 'Seeded' remain, the user of this Move regains 1 Wound. 'Seeded' creatures then take 1 Wound of damage. "
   },
   "sleep powder": {
     "move": "Sleep Powder",
@@ -5028,7 +5041,7 @@
     "targetType": "Multi-Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user strikes with a bone club at 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities."
+    "descEffects": "The user strikes with a bone club at 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.."
   },
   "bonemerang": {
     "move": "Bonemerang",
@@ -5041,7 +5054,7 @@
     "targetType": "Multi-Target",
     "range": "5 Sq.",
     "pp": 2,
-    "descEffects": "The user throws the bone its holding to hit up to 2 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user throws the bone its holding to hit up to 2 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "bulldoze": {
     "move": "Bulldoze",
@@ -5067,7 +5080,7 @@
     "targetType": "Single Target",
     "range": "-",
     "pp": 2,
-    "descEffects": "The user performs a two-Turn attack. First, they deep underground, entering Full Obscurement. On the second Turn, they leave Full Obscurement and burst out underneath the target. The user of this Move can target any creature in Battle with this Move and moves to the target, requiring no movement. The Moves Earthquake, Magnitude, and Fissure ignore the user's Full Obscurement granted by this Move,and they deal twice as many Wounds on a hit."
+    "descEffects": "The user performs a two-Turn attack. First, they deep underground, entering Full Obscurement. On the second Turn, they leave Full Obscurement and burst out underneath the target. The user of this Move can target any creature in Battle with this Move and moves to the target, requiring no movement. The Moves Earthquake, Magnitude, and Fissure ignore the user's Full Obscurement granted by this Move,and they deal additional Wounds equal to their base Wound amounts."
   },
   "drill run": {
     "move": "Drill Run",
@@ -5093,7 +5106,7 @@
     "targetType": "Field",
     "range": "-",
     "pp": 2,
-    "descEffects": "The user creates an earthquake that tremors and throws debris to hit every creature on the field. Creatures that are underground, such as through Dig or a burrowing speed, are dealt twice as many Wounds by this Move. "
+    "descEffects": "The user creates an earthquake that tremors and throws debris to hit every creature on the field. Creatures that are underground, such as through Dig or a burrowing speed, are dealt an additional 3 Wounds by this Move. "
   },
   "fissure": {
     "move": "Fissure",
@@ -5197,7 +5210,7 @@
     "targetType": "Radius",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user attacks all around it with a frustrated drive. If the user missed with another Move on the previous Round, this Move deals twice as many Wounds. "
+    "descEffects": "The user attacks all around it with a frustrated drive. If the user missed with another Move on the previous Round, this Move deals an additional 3 Wounds."
   },
   "thousand arrows": {
     "move": "Thousand Arrows",
@@ -5344,16 +5357,16 @@
   },
   "sandstorm": {
     "move": "Sandstorm",
-    "type": "Rock",
+    "type": "Ground",
     "category": "Status",
     "priority": "No",
     "contact": "No",
     "autoHit": "No",
     "wounds": "-",
-    "targetType": "Weather",
+    "targetType": "Field",
     "range": "-",
     "pp": 2,
-    "descEffects": "The user swirls sand and rock to create a Sandstorm for 5 Rounds. "
+    "descEffects": "The user causes the sand to swirl in the air for 5 Rounds, creating a Sandstorm. "
   },
   "shore up": {
     "move": "Shore Up",
@@ -5379,7 +5392,7 @@
     "targetType": "Hazard",
     "range": "-",
     "pp": 4,
-    "descEffects": "The user scatters ground-type empowered spikes across the field that lasts until the Battle Ends. When an enemy creature enters Battle, those spikes deal 1 Wound to that creature. Up to three uses of this Move can be present in Battle at a time. When this Move is used for a fourth time, the oldest occurrence of this Move vanishes. "
+    "descEffects": "The user scatters ground-type empowered spikes across the field that lasts until the Battle Ends. When an enemy creature without a Flying or Levitating movement speed enters Battle, those spikes deal 1 Wound to that creature. "
   },
   "avalanche": {
     "move": "Avalanche",
@@ -5392,7 +5405,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user attacks with an ice-infused rageful attack. If the user has been dealt Wounds by the target using a Physical or Special Move this Round, this Move deals twice as many Wounds. "
+    "descEffects": "The user attacks with an ice-infused rageful attack. If the user has been dealt Wounds by the target using a Physical or Special Move this Round, this Move deals an additional 2 Wounds."
   },
   "freeze shock": {
     "move": "Freeze Shock",
@@ -5431,7 +5444,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 4,
-    "descEffects": "The user tucks itself into an icy ball and begins to roll for 5 Rounds. Each turn, without expending an additional PP, the user strikes at a target within range, dealing an additional Wound for each previous time this Move has hit since the user began rolling. If the user cannot hit a target, misses a target, or leaves Battle, this Move ends early. If the user is under the effects of Defense Curl, this Move deals twice as many Wounds. "
+    "descEffects": "The user tucks itself into an icy ball and begins to roll for 5 Rounds. Each turn, without expending an additional PP, the user strikes at a target within range, dealing an additional 1 Wound for each previous time this Move has hit since the user began rolling. If the user cannot hit a target, misses a target, or leaves Battle, this Move ends early. If the user is under the effects of Defense Curl, this Move instead deals 2 Wounds for each previous time this Move has hit. "
   },
   "ice fang": {
     "move": "Ice Fang",
@@ -5522,7 +5535,7 @@
     "targetType": "Multi-Target",
     "range": "6 Sq.",
     "pp": 6,
-    "descEffects": "The user launches sharp icicles at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user launches sharp icicles at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "mountain gale": {
     "move": "Mountain Gale",
@@ -5548,7 +5561,7 @@
     "targetType": "Multi-Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user throws consecutive kicks at up to 3 targets. The first kick deals 1 Wound, and the second and third kicks each deal 2 Wounds. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user throws consecutive kicks at up to 3 targets. The first kick deals 1 Wound, and the second and third kicks each deal 2 Wounds. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "aurora beam": {
     "move": "Aurora Beam",
@@ -5769,7 +5782,7 @@
     "targetType": "Multi-Target",
     "range": "5 Sq.",
     "pp": 4,
-    "descEffects": "The user hurls round objects at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user hurls round objects at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "bide": {
     "move": "Bide",
@@ -5808,7 +5821,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 3,
-    "descEffects": "The user drops onto the target with its full body weight. This Move may Paralyze the target. If the target has used Minimize, this Move hits without fail, requiring no roll, and deals twice the number of Wounds. "
+    "descEffects": "The user drops onto the target with its full body weight. This Move may Paralyze the target. If the target has used Minimize, this Move hits without fail, requiring no roll, and deals an additional 3 Wounds."
   },
   "chip away": {
     "move": "Chip Away",
@@ -5834,7 +5847,7 @@
     "targetType": "Multi-Target",
     "range": "1 Sq.",
     "pp": 3,
-    "descEffects": "The user sends a flurry of punches at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user sends a flurry of punches at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "constrict": {
     "move": "Constrict",
@@ -5925,7 +5938,7 @@
     "targetType": "Multi-Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user slams up to two targets with a tail or the like. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user slams up to two targets with a tail or the like. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "double slap": {
     "move": "Double Slap",
@@ -5938,7 +5951,7 @@
     "targetType": "Multi-Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user repeatedly slaps up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user repeatedly slaps up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "double-edge": {
     "move": "Double-Edge",
@@ -5966,8 +5979,8 @@
     "pp": 2,
     "descEffects": "The user hurls an explosive egg at a spot in range, hitting creatures within a 1 Sq. radius of that spot. "
   },
-  "endeavor": {
-    "move": "Endeavor",
+  "endeavour": {
+    "move": "Endeavour",
     "type": "Normal",
     "category": "Physical",
     "priority": "No",
@@ -6016,7 +6029,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 4,
-    "descEffects": "The user puts on a brave face and attacks. If the user is Burned, Paralyzed, Poisoned, or Badly Poisoned, this Move deals twice as many Wounds."
+    "descEffects": "The user puts on a brave face and attacks. If the user is Burned, Paralyzed, Poisoned, or Badly Poisoned, this Move deals an additional 3 Wounds."
   },
   "fake out": {
     "move": "Fake Out",
@@ -6055,7 +6068,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user nimbly attacks.  This Move can hit creatures protected by 'protection Moves', such as Protect.  "
+    "descEffects": "The user nimbly attacks. This Move can hit creatures protected by 'protection Moves', such as Protect.  "
   },
   "flail": {
     "move": "Flail",
@@ -6094,7 +6107,7 @@
     "targetType": "Multi-Target",
     "range": "1 Sq.",
     "pp": 4,
-    "descEffects": "The user jabs at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user jabs at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "fury swipes": {
     "move": "Fury Swipes",
@@ -6107,7 +6120,7 @@
     "targetType": "Multi-Target",
     "range": "1 Sq.",
     "pp": 3,
-    "descEffects": "The user rakes sharp claws at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user rakes sharp claws at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "giga impact": {
     "move": "Giga Impact",
@@ -6406,7 +6419,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 1,
-    "descEffects": "The user takes revenge through their attack. If an ally Pokemon has Fainted during the previous Round or during the Round, this Move deals twice as many Wounds. "
+    "descEffects": "The user takes revenge through their attack. If an ally Pokemon has Fainted during the previous Round or during the Round, this Move deals an additional 3 Wounds."
   },
   "return": {
     "move": "Return",
@@ -6523,7 +6536,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user attacks in with an invigorating slap. If the target is Paralyzed, this Move deals twice as many Wounds. The target is no longer Paralyzed. "
+    "descEffects": "The user attacks in with an invigorating slap. If the target is Paralyzed, this Move deals an additional 3 Wounds. The target is no longer Paralyzed. "
   },
   "spike cannon": {
     "move": "Spike Cannon",
@@ -6536,7 +6549,7 @@
     "targetType": "Multi-Target",
     "range": "8 Sq.",
     "pp": 3,
-    "descEffects": "The user fire spike shots at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user fire spike shots at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "stomp": {
     "move": "Stomp",
@@ -6549,7 +6562,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 4,
-    "descEffects": "The user stomps the target with a big foot. The target may be Flinched. "
+    "descEffects": "The user stomps the target with a big foot. The target may be Flinched. If the target has used Minimize, this Move hits without fail, requiring no roll, and deals an additional 3 Wounds."
   },
   "strength": {
     "move": "Strength",
@@ -6614,7 +6627,7 @@
     "targetType": "Multi-Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user slaps their tail at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user slaps their tail at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "take down": {
     "move": "Take Down",
@@ -6655,8 +6668,8 @@
     "pp": 4,
     "descEffects": "The user does a full-power attack that grows more powerful the more it likes its trainer. This Move deals a number of Wounds equal to half of its Friendship Points, rounded up (minimum one). "
   },
-  "vice grip": {
-    "move": "Vice Grip",
+  "vise grip": {
+    "move": "Vise Grip",
     "type": "Normal",
     "category": "Physical",
     "priority": "No",
@@ -6822,7 +6835,7 @@
     "targetType": "Field",
     "range": "-",
     "pp": 3,
-    "descEffects": "The user attacks the target with a song. If another creature uses this Move, the user may immediately declare the use of this Move and take their Turn. If this Move is being used after another creature has used this Move this Round, this Move deals twice the number of Wounds. "
+    "descEffects": "The user attacks the target with a song. If another creature uses this Move, the user may immediately declare the use of this Move and take their Turn. If this Move is being used after another creature has used this Move this Round, this Move deals an additional 2 Wounds."
   },
   "snore": {
     "move": "Snore",
@@ -6978,7 +6991,7 @@
     "targetType": "Area",
     "range": "8 Sq.",
     "pp": 2,
-    "descEffects": "The user sends a compact ball of weather at a 1 Sq. radius point within range. If the Weather is not clear, this Move deals twice as many Wounds. This Move's Type changes based on the Weather to the following Type: Fire (Harsh Sunlight), Water (Rain), Ice (Hail), or Rock (Sandstorm)."
+    "descEffects": "The user sends a compact ball of weather at a 1 Sq. radius point within range. If the Weather is not clear, this Move deals an additional 2 Wounds. This Move's Type changes based on the Weather to the following Type: Fire (Harsh Sunlight), Water (Rain), Ice (Hail), or Rock (Sandstorm)."
   },
   "wring out": {
     "move": "Wring Out",
@@ -7327,7 +7340,7 @@
     "targetType": "Self",
     "range": "-",
     "pp": 4,
-    "descEffects": "The user focuses all attention on themselves. This turn, all Moves used by enemies with a Target Type of Single Target or Contact now target the user. If the user Faints or is Returned before the end of the Round, this effect no longer applies. This Move ignores the Storm Drain and Lightning Rod abilities, allowing the user to be hit by this Move. "
+    "descEffects": "The user focuses all attention on themselves. This turn, all Moves used by enemies with a Target Type of Single Target now target the user, as long as the user is within Range. If the user Faints or is Returned before the end of the Round, this effect no longer applies. This Move ignores the Storm Drain and Lightning Rod abilities, allowing the user to be hit by this Move. "
   },
   "foresight": {
     "move": "Foresight",
@@ -7366,7 +7379,7 @@
     "targetType": "Single Target",
     "range": "3 Sq.",
     "pp": 8,
-    "descEffects": "The user gives the target an intimidating leer and lowers their Attack by -2 Stages. "
+    "descEffects": "The user gives the target an intimidating growl and lowers their Attack by -2 Stages. "
   },
   "growth": {
     "move": "Growth",
@@ -7379,7 +7392,7 @@
     "targetType": "Self",
     "range": "-",
     "pp": 4,
-    "descEffects": "The user's body grows all at once. The user's Attack and Sp. Attack increase by +2 Stages. If the Weather is Harsh Sunlight, it increases their Attack and Sp. Attack by +4 instead."
+    "descEffects": "The user's body grows all at once. The user's HP, Attack, and Sp. Attack increase by +2 Stages. If the Weather is Harsh Sunlight, it increases their HP, Attack and, Sp. Attack by +4 instead."
   },
   "happy hour": {
     "move": "Happy Hour",
@@ -7678,7 +7691,7 @@
     "targetType": "Field",
     "range": "-",
     "pp": 1,
-    "descEffects": "The user sings a malevolent melody that will cause the doom of all who hear it. Each creature in Battle, including the user, receives a Perish Count until the leave Battle. the Perish Count begins at 4. At the end of each Round, the Perish Count goes down by 1. When the Perish Count hits 0, all affected creatures Faint. "
+    "descEffects": "The user sings a malevolent melody that will cause the doom of all who hear it. Each creature in Battle, including the user, receives a 'Perish Count' of 4 until they leave Battle. At the end of each Round, each creature's Perish Count lowers by 1. When a creature's Perish Count becomes 0, that creature Faints. A creature with a Perish Count is not affected by this Ability. "
   },
   "play nice": {
     "move": "Play Nice",
@@ -7710,7 +7723,7 @@
     "move": "Protect",
     "type": "Normal",
     "category": "Status",
-    "priority": "No",
+    "priority": "Yes",
     "contact": "No",
     "autoHit": "No",
     "wounds": "-",
@@ -7808,7 +7821,7 @@
     "targetType": "Single Target",
     "range": "6 Sq.",
     "pp": 4,
-    "descEffects": "The user sings a soothing song that spreads across the field. Creatures hit by this move fall Asleep."
+    "descEffects": "The user scares the target and forces them to Swap. If there are no creatures left in the target's team, this Move fails. If the target is a Wild Pokemon, they Flee instead. "
   },
   "safeguard": {
     "move": "Safeguard",
@@ -7925,7 +7938,7 @@
     "targetType": "Single Target",
     "range": "4 Sq.",
     "pp": 1,
-    "descEffects": "The user breaks its shell to increase its offensive power at a cost. The user's HP, Defense and Sp. Defense lower by -2 Stages. The user's Attack, Sp. Attack, and Speed increases by +4 Stages. "
+    "descEffects": "The user uses their artist vision to learn the Move last used by the target, permanently. This Move is replaced by the new Move and can be relearned later. "
   },
   "slack off": {
     "move": "Slack Off",
@@ -8070,6 +8083,19 @@
     "pp": 3,
     "descEffects": "The user begins to hurl insults to infuriate the target. The target becomes Confused for 1d4 + 1 Rounds and has their Attack increased by +4 Stages. "
   },
+  "swallow": {
+    "move": "Swallow",
+    "type": "Normal",
+    "category": "Status",
+    "priority": "No",
+    "contact": "No",
+    "autoHit": "No",
+    "wounds": "-",
+    "targetType": "Self",
+    "range": "-",
+    "pp": 2,
+    "descEffects": "The user eats the energy that they've stored to heal themselves. If the user has no Stockpile stacks, this Move fails. This Move regains a number of Wounds equal to 3 times the user's Stockpile stacks. When this Move is used, the user loses all Stockpile stacks. "
+  },
   "sweet scent": {
     "move": "Sweet Scent",
     "type": "Normal",
@@ -8107,7 +8133,7 @@
     "targetType": "Single Target",
     "range": "8 Sq.",
     "pp": 6,
-    "descEffects": "The user wags its tail cutely at the target, making its foe lower its guard. A Pokemon hit by this Move has their Defense Die size reduced by -2 until Fainted, Returned, or Battle End. "
+    "descEffects": "The user wags its tail cutely. The target's Defense lowers by -2 Stages. "
   },
   "tearful look": {
     "move": "Tearful Look",
@@ -8159,7 +8185,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 4,
-    "descEffects": "The user tickles the target into laughing. The target's Attack and Defense lower by -2 Stages. "
+    "descEffects": "The user tickles the target into laughing. The target's HP, Attack, and Defense lower by -2 Stages. "
   },
   "tidy up": {
     "move": "Tidy Up",
@@ -8198,7 +8224,7 @@
     "targetType": "Single Target",
     "range": "10 Sq.",
     "pp": 4,
-    "descEffects": "The user blows the target away, forcing them to Swap. If there are no creatures to Swap with, this Move fails. If the Move is used on a Wild Pokemon, that Pokemon Flees. Moves that would prevent the target from being effected by this Move, such as Protect, do not prevent the target from being affected by this Move. "
+    "descEffects": "The user blows the target away, forcing them to Swap. If there are no creatures to Swap with, this Move fails. If the Move is used on a Wild Pokemon, that Pokemon Flees. Moves that would prevent the target from being effected by this Move, such as Protect, do not prevent the target from being affected by this Move. Creatures do not benefit from the Full Obscurement of being in the sky when making defending rolls against this Move, and this Move can target creatures under the effects of Fly, Bounce, and Sky Drop."
   },
   "wish": {
     "move": "Wish",
@@ -8250,7 +8276,7 @@
     "targetType": "Single Target",
     "range": "8 Sq.",
     "pp": 2,
-    "descEffects": "The user launches toxic barbs to inflict damage. The target may be Poisoned. If the target is Asleep, Burned, Paralyzed, Poisoned,or Badly Poisoned, this Move deals twice as many Wounds. "
+    "descEffects": "The user launches toxic barbs to inflict damage. The target may be Poisoned. If the target is Asleep, Burned, Paralyzed, Poisoned,or Badly Poisoned, this Move deals an additional 2 Wounds."
   },
   "cross poison": {
     "move": "Cross Poison",
@@ -8328,7 +8354,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 3,
-    "descEffects": "The user bites the target with cold-infused fangs. The target may be Poisoned and/or Flinched. "
+    "descEffects": "The user bites the target with cold-infused fangs. The target may be Badly Poisoned. "
   },
   "poison jab": {
     "move": "Poison Jab",
@@ -8380,7 +8406,7 @@
     "targetType": "Cone",
     "range": "3 Sq.",
     "pp": 6,
-    "descEffects": "The user sprays forth a harsh acid. Creatures hit by this Move may be Poisoned. If a creature is Poisoned this way, their Defense is reduced by -2 Stages."
+    "descEffects": "The user sprays forth a harsh acid. Creatures hit by this Move may be Poisoned. If a creature is Poisoned this way, their HP and Defense are reduced by -2 Stages."
   },
   "acid spray": {
     "move": "Acid Spray",
@@ -8510,7 +8536,7 @@
     "targetType": "Single Target",
     "range": "6 Sq.",
     "pp": 2,
-    "descEffects": "The user drenches the target in a special poisonous liquid. The Move deals twice as many Wounds if the target is Poisoned. "
+    "descEffects": "The user drenches the target in a special poisonous liquid. The Move deals an additional 2 Wounds if the target is Poisoned. "
   },
   "acid armor": {
     "move": "Acid Armor",
@@ -9095,7 +9121,7 @@
     "targetType": "Multi-Target",
     "range": "8 Sq.",
     "pp": 2,
-    "descEffects": "The user shoots mystical beams from its eyes to inflict damage at up to two targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities."
+    "descEffects": "The user shoots mystical beams from its eyes to inflict damage at up to two targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.."
   },
   "agility": {
     "move": "Agility",
@@ -9160,7 +9186,7 @@
     "targetType": "Self",
     "range": "-",
     "pp": 4,
-    "descEffects": "The user concentrates inward. The user's Sp. Attack and Sp. Defense increase by +2 Stages."
+    "descEffects": "The user concentrates inward. The user's HP, Sp. Attack, and Sp. Defense increase by +2 Stages."
   },
   "cosmic power": {
     "move": "Cosmic Power",
@@ -9251,7 +9277,7 @@
     "targetType": "Self",
     "range": "-",
     "pp": 2,
-    "descEffects": "The user gives it life-force for its ally. The user Faints. At the end of the Round, another creature in its Party enters Battle. That creature regains all Wounds and is cured of all status conditions. If there are no non-Fainted creatures in the user's Party, this Move fails."
+    "descEffects": "The user gives it life-force for its ally. The user Faints. At the end of the Round, another creature in its Party enters Battle. That creature regains all Wounds and is cured of all status conditions. If there are no non-Fainted creatures in the user's Party, this Move fails. If the new creature has taken no Wounds and has no Status Conditions, the healing effect of this Move will not activate until that creature Swaps with a creature that has taken Wounds or has a Status Condition. "
   },
   "heart swap": {
     "move": "Heart Swap",
@@ -9693,7 +9719,7 @@
     "targetType": "Multi-Target",
     "range": "6 Sq.",
     "pp": 2,
-    "descEffects": "The user hurls hard rocks at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user hurls hard rocks at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "rock slide": {
     "move": "Rock Slide",
@@ -9702,7 +9728,7 @@
     "priority": "No",
     "contact": "No",
     "autoHit": "No",
-    "wounds": 2,
+    "wounds": 3,
     "targetType": "Area",
     "range": "6 Sq.",
     "pp": 2,
@@ -9758,7 +9784,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 4,
-    "descEffects": "The user tucks itself into a ball and begins to roll for 5 Rounds. Each turn, without expending an additional PP, the user strikes at a target within range, dealing an additional Wound for each previous time this Move has hit since the user began rolling. If the user cannot hit a target, misses a target, or leaves Battle, this Move ends early. If the user is under the effects of Defense Curl, this Move deals twice as many Wounds. "
+    "descEffects": "The user tucks itself into a ball and begins to roll for 5 Rounds. Each turn, without expending an additional PP, the user strikes at a target within range, dealing an additional Wound for each previous time this Move has hit since the user began rolling. If the user cannot hit a target, misses a target, or leaves Battle, this Move ends early. If the user is under the effects of Defense Curl, this Move instead deals 2 Wounds for each previous time this Move has hit. "
   },
   "salt cure": {
     "move": "Salt Cure",
@@ -9784,7 +9810,7 @@
     "targetType": "Single Target",
     "range": "7 Sq.",
     "pp": 3,
-    "descEffects": "The user throws a projectile at a target. A Pokemon hit by this Move loses flying and levitating Movement Speeds, and they lose any immunity to Ground Type Moves until they leave Battle. "
+    "descEffects": "The user throws a projectile at a target. A Pokemon hit by this Move loses flying and levitating Movement Speeds, and they lose any immunity to Ground Type Moves until they leave Battle. Creatures do not benefit from the Full Obscurement of being in the sky when making defending rolls against this Move, and this Move can target creatures under the effects of Fly, Bounce, and Sky Drop."
   },
   "stone axe": {
     "move": "Stone Axe",
@@ -9888,7 +9914,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 3,
-    "descEffects": "The user pours sticky tar over the target. The target's Speed lowers by -2 Stages and the target becomes 'tar covered'. A 'tar covered' creature takes twice as many Wounds from Fire-Type Physical and Special Moves until the target leave's battle. "
+    "descEffects": "The user pours sticky tar over the target. The target's Speed lowers by -2 Stages and the target becomes 'tar covered'. A 'tar covered' creature takes an additional 2 Wounds from Fire-Type Physical and Special Moves until the target leave's battle. "
   },
   "wide guard": {
     "move": "Wide Guard",
@@ -9927,7 +9953,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 1,
-    "descEffects": "The user becomes a gigantic shield and slams into the target. If the user is Dynamaxed or Gigantamaxed, this Move deals twice as many Wounds. "
+    "descEffects": "The user becomes a gigantic shield and slams into the target. If the user is Dynamaxed or Gigantamaxed, this Move deals an additional 4 Wounds."
   },
   "behemoth blade": {
     "move": "Behemoth Blade",
@@ -9940,7 +9966,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 1,
-    "descEffects": "The user becomes a gigantic sword and cuts into the target. If the user is Dynamaxed or Gigantamaxed, this Move deals twice as many Wounds. "
+    "descEffects": "The user becomes a gigantic sword and cuts into the target. If the user is Dynamaxed or Gigantamaxed, this Move deals an additional 4 Wounds."
   },
   "bullet punch": {
     "move": "Bullet Punch",
@@ -9979,7 +10005,7 @@
     "targetType": "Multi-Target",
     "range": "6 Sq.",
     "pp": 3,
-    "descEffects": "The user throws steel gears from its body at up to two targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user throws steel gears from its body at up to two targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "gigaton hammer": {
     "move": "Gigaton Hammer",
@@ -10031,7 +10057,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user slams into the target with its heavy body. This Move deals a number of Wounds equal to twice the difference of the Size categories of the user and the target (minimum 1). To calculate the value of each Size category, refer to the following: 1 (Small), 2 (Medium), 3 (Large), 4 (Huge), 5 (Massive). If the target has used Minimize, this Move hits without fail, requiring no roll, and deals twice the number of Wounds. "
+    "descEffects": "The user slams into the target with its heavy body. This Move deals a number of Wounds equal to twice the difference of the Size categories of the user and the target (minimum 1). To calculate the value of each Size category, refer to the following: 1 (Small), 2 (Medium), 3 (Large), 4 (Huge), 5 (Massive). If the target has used Minimize, this Move hits without fail, requiring no roll, and deals an additional 2 Wounds."
   },
   "iron head": {
     "move": "Iron Head",
@@ -10148,7 +10174,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 1,
-    "descEffects": "The user attacks while destroying the terrain. The Move deals twice as many Wounds if a Terrain is in effect. After this Move is used, the current Terrain ends. "
+    "descEffects": "The user attacks while destroying the terrain. The Move deals an additional 5 Wounds if a Terrain is in effect. After this Move is used, the current Terrain ends. "
   },
   "steel wing": {
     "move": "Steel Wing",
@@ -10252,7 +10278,7 @@
     "targetType": "Multi-Target",
     "range": "6 Sq.",
     "pp": 2,
-    "descEffects": "The user launches particle blades at up to two targets.  A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user launches particle blades at up to two targets.  A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "autotomize": {
     "move": "Autotomize",
@@ -10434,7 +10460,7 @@
     "targetType": "Single Target",
     "range": "-",
     "pp": 2,
-    "descEffects": "The user performs a two-Turn attack. First, they swim down through either water or earth, entering Full Obscurement. On the second Turn, they leave Full Obscurement and burst out underneath the target. The user of this Move can target any creature in Battle with this Move and moves to the target, requiring no movement. The Moves Surf and Whirlpool ignore the user's Full Obscurement granted by this Move,and they deal twice as many Wounds on a hit."
+    "descEffects": "The user performs a two-Turn attack. First, they swim down through either water or earth, entering Full Obscurement. On the second Turn, they leave Full Obscurement and burst out underneath the target. The user of this Move can target any creature in Battle with this Move and moves to the target, requiring no movement. The Moves Surf and Whirlpool ignore the user's Full Obscurement granted by this Move,and they deal additional Wounds equal to their base Wound amounts."
   },
   "fishious rend": {
     "move": "Fishious Rend",
@@ -10447,7 +10473,7 @@
     "targetType": "Single Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user rends the target with its hard gills. If the target has not yet taken its Turn, this Move deals twice as many Wounds. "
+    "descEffects": "The user rends the target with its hard gills. If the target has not yet taken its Turn, this Move deals an additional 3 Wounds"
   },
   "flip turn": {
     "move": "Flip Turn",
@@ -10475,8 +10501,8 @@
     "pp": 3,
     "descEffects": "The user summons a torrent around its fist and punches at blinding speed. "
   },
-  "liquidization": {
-    "move": "Liquidization",
+  "liquidation": {
+    "move": "Liquidation",
     "type": "Water",
     "category": "Physical",
     "priority": "No",
@@ -10525,7 +10551,7 @@
     "targetType": "Multi-Target",
     "range": "1 Sq.",
     "pp": 2,
-    "descEffects": "The user performs a perfectly times triple dive, hitting up to 3 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user performs a perfectly times triple dive, hitting up to 3 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "waterfall": {
     "move": "Waterfall",
@@ -10577,7 +10603,7 @@
     "targetType": "Single Target",
     "range": "6 Sq.",
     "pp": 2,
-    "descEffects": "The user sprays highly acidic water at the target. This Move deals twice as many Wounds if the target has 5 or more Wounds. "
+    "descEffects": "The user sprays highly acidic water at the target. If the target has 5 or more Wounds, this Move deals an additional 2 Wounds."
   },
   "bubble": {
     "move": "Bubble",
@@ -10772,7 +10798,7 @@
     "targetType": "Cone",
     "range": "5 Sq.",
     "pp": 3,
-    "descEffects": "The user swamps the area around them with a turbulent wave. This Move deals twice as many Wounds to creatures that are using a Swimming movement speed. "
+    "descEffects": "The user swamps the area around them with a turbulent wave. This Move deals an additional 3 Wounds to creatures that are using a Swimming movement speed. "
   },
   "water gun": {
     "move": "Water Gun",
@@ -10798,7 +10824,7 @@
     "targetType": "Area",
     "range": "6 Sq.",
     "pp": 2,
-    "descEffects": "The user creates a 2 Sq. radius column of raging water within range. If an ally creature uses Fire Pledge or Grass Pledge and the user has not yet taken their turn, the user may skip their Turn this Round, expend one PP from this Move, and have that Fire Pledge or Grass Pledge deal twice as many Wounds. If Fire Pledge is affected this way, a rainbow appears over the field for 2 Rounds that grants ally creatures the Serene Grace ability (in addition to their other abilities). If Grass Pledge is affected this way, a swamp appears on the field for 2 Rounds that quarter's enemy Pokemon's Turn Order (rounded down). If a rainbow, sea of fire, or swamp are already present on the battlefield (by being summoned by a Pledge move), then this Move does not create a rainbow or sea of fire. "
+    "descEffects": "The user creates a 2 Sq. radius column of raging water within range. If an ally creature uses Fire Pledge or Grass Pledge and the user has not yet taken their turn, the user may skip their Turn this Round, expend one PP from this Move, and have that Fire Pledge or Grass Pledge deal an additional 3 Wounds. If Fire Pledge is affected this way, a rainbow appears over the field for 2 Rounds that grants ally creatures the Serene Grace ability (in addition to their other abilities). If Grass Pledge is affected this way, a swamp appears on the field for 2 Rounds that quarter's enemy Pokemon's Turn Order (rounded down). If a rainbow, sea of fire, or swamp are already present on the battlefield (by being summoned by a Pledge move), then this Move does not create a rainbow or sea of fire. "
   },
   "water pulse": {
     "move": "Water Pulse",
@@ -10824,7 +10850,7 @@
     "targetType": "Multi-Target",
     "range": "6 Sq.",
     "pp": 4,
-    "descEffects": "The user throws water-made shurikens at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, or Abilities. "
+    "descEffects": "The user throws water-made shurikens at up to 1d4 + 1 targets. A single creature can be targeted multiple times, though each successive hit on a single target does not add additional Wounds from S.T.A.B., Items, Abilities, Weather, or Terrain.. "
   },
   "water spout": {
     "move": "Water Spout",
@@ -10850,7 +10876,7 @@
     "targetType": "Field",
     "range": "-",
     "pp": 3,
-    "descEffects": "The user releases violent swirling whirlpools that surround each enemy creature on the Field. Creatures hit by this Move are Bound in an intense spiral of water that rages for 1d4 + 1 turns."
+    "descEffects": "The user releases violent swirling whirlpools that surround each enemy creature on the Field. Creatures hit by this Move are Bound in an intense spiral of water that rages for 1d4 + 1 turns. Creatures do not benefit from the Full Obscurement of being underwater when making defending rolls against this Move, and this Move can target creatures under the effects of Dive. When a creature under the effect Dive is hit this way, they are dealt an additional 1 Wound on a hit. "
   },
   "aqua ring": {
     "move": "Aqua Ring",

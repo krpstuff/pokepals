@@ -1,20 +1,12 @@
 // vars
-const apiUrl = "https://pokeapi.co/api/v2/pokemon";
+import pokemon from "../data/pokemon.json" with { type: 'json' };
 
-// fetch pokemon
-export const fetchPkmn = async (pkmn, species = false) => {
-  let url = species ? `${apiUrl}-species/${pkmn}` : `${apiUrl}/${pkmn}`;
-
+// fetch pokemon from sheets data 
+export const fetchPkmnStatic = async (pkmn) => {
   try {
-    const response = await fetch(url);
-
-    if (!response.ok) {
-      throw new Error(`Response status: ${response.status}`);
-    }
-
-    const result = await response.json();
-    return result;
-  } catch (error) {
-    return error;
+    const pkmnData = pokemon[pkmn];
+    return pkmnData;
+  } catch (err) {
+    return err;
   }
-};
+}

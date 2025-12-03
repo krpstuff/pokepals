@@ -1,12 +1,11 @@
 // imports
-import { fetchPkmn } from "./methods/fetch.js";
+import { fetchPkmnStatic } from "./methods/fetch.js";
 import { parseStats } from "./methods/dice.js";
-import { getEvo } from "./methods/evolution.js";
 import { findMove } from "./methods/moves.js";
 import {
   natureDropdown,
   displayDiceStats,
-  displayEvoStats,
+  displayPokemonStats,
   displayMoveStats,
 } from "./methods/display.js";
 
@@ -22,22 +21,18 @@ pkmnSearch.addEventListener("submit", async (e) => {
   pkmnSearchInput.value = "";
 
   try {
-    const pkmnData = await fetchPkmn(pkmn);
-    const speciesData = await fetchPkmn(pkmn, true);
+    const pkmnStaticData = await fetchPkmnStatic(pkmn);
 
     // get img
-    let pkmnImg = pkmnData?.sprites.front_default;
+    let pkmnImg = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pkmnStaticData.pokedexNumber}.png`;
 
     // get dice stats
-    let pkmnStats = await parseStats(pkmnData);
-
-    // get evo info
-    let pkmnEvo = await getEvo(speciesData?.evolution_chain.url, pkmn);
+    let pkmnStats = await parseStats(pkmnStaticData);
 
     return displayInfo({
       pkmnImg,
       pkmnStats,
-      pkmnEvo,
+      pkmnStaticData,
       input: pkmn,
       inputType: "pokemon",
     });
@@ -95,7 +90,29 @@ const displayInfo = async (info, error = false) => {
     const screenImg = document.getElementById("screen-img");
     screenImg.setAttribute("src", info.pkmnImg);
 
-    // dice
+    // pokemon stats
+    const pkmnLabel = document.createElement("label");
+    pkmnLabel.innerHTML = "pokemon info"
+    const pkmnInfo = await displayPokemonStats(info);
+ 
+
+    // pokemondb links
+    const typesLink = document.createElement("a");
+    typesLink.innerHTML = "see type effectiveness";
+    typesLink.setAttribute("href", `https://pokemondb.net/pokedex/${info.input}#dex-stats`);
+    typesLink.setAttribute("id", `types-link`);
+    const movesLink = document.createElement("a");
+    movesLink.innerHTML = "see moveset";
+    movesLink.setAttribute("href", `https://pokemondb.net/pokedex/${info.input}#dex-moves`);
+    movesLink.setAttribute("id", `moves-link`);
+
+    const linksContainer = document.createElement("div");
+    linksContainer.setAttribute("id", "pkmndb-links");
+    linksContainer.append(typesLink, movesLink);
+    
+    infoBox.append(pkmnLabel, pkmnInfo.statList, linksContainer);
+
+    // dice stats
     const statLabel = document.createElement("label");
     statLabel.innerHTML = "dice stats";
     const statList = await displayDiceStats(info);
@@ -113,25 +130,9 @@ const displayInfo = async (info, error = false) => {
 
     natureDiv.append(natureLabel, natureSelect, natureAdjustments);
     infoBox.append(statLabel, statList, natureDiv);
-
-    // evo
-    const evoLabel = document.createElement("label");
-    const evolution = document.createElement("p");
-    let evoList;
-
-    if (info.pkmnEvo) {
-      evoLabel.innerHTML = "evolution info";
-      evolution.innerHTML = `<strong>${info.input}</strong> evolves into <strong>${info.pkmnEvo.name}</strong> and requires...`;
-
-      evoList = await displayEvoStats(info);
-    } else {
-      evolution.innerHTML = `<strong>${info.input}</strong> is already at max evolution`;
-    }
-
-    infoBox.append(evoLabel, evolution, evoList);
   } else {
     // move
-    const moveList = await displayMoveStats(info);
-    infoBox.appendChild(moveList);
+    const moveData = await displayMoveStats(info);
+    infoBox.appendChild(moveData.moveList);
   }
 };

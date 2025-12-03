@@ -9,16 +9,8 @@ import {
 // get original stats
 const parseStats = async (pkmnData, nature = false) => {
   const origStats = {};
-  for (const stat in pkmnData.stats) {
-    let statName = pkmnData.stats[stat].stat.name;
-    let statVal = pkmnData.stats[stat].base_stat;
-
-    for (const thresh in statThresholds) {
-      if (statVal <= Number(thresh)) {
-        origStats[statName] = statThresholds[thresh];
-        break;
-      }
-    }
+  for (const i in diceStat) {
+    origStats[diceStat[i]] = dice.indexOf(pkmnData[diceStat[i]].toUpperCase());
   }
 
   let diceStats = await convertStats(origStats);
