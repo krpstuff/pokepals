@@ -92,7 +92,7 @@ main {
 }
 
 label {
-    font-family: 'Rubik 80s Fade', system-ui;
+    font-family: 'Jockey One', system-ui;
     font-size: 1.3em;
     color: #F7Ce46;
     text-shadow:
@@ -122,7 +122,7 @@ input[type="text"] {
 }
 
 input[type="submit"] {
-    font-family: 'Rubik 80s Fade', system-ui;
+    font-family: 'Jockey One', system-ui;
     background: #4469b5;
     color: #fff6ec;
 }
@@ -147,7 +147,7 @@ input[type="submit"] {
 }
 
 #info-box label {
-    font-size: 0.9em;
+    font-size: 1.2em;
 }
 
 #pkmndb-links {
