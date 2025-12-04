@@ -1,7 +1,88 @@
 // imports
 import { natures, diceStat, neededMoveInfo, neededPkmnInfo } from "../data/conversions.js";
-import { adjustStats } from "./dice.js";
+import { adjustStats, parseStats } from "./dice.js";
 import abilities from "../data/abilities.json" with { type: 'json' };
+
+// display info 
+const displayInfo = async (info, error = false) => {
+  const resultContainer = document.getElementById("results");
+  const infoBox = document.getElementById("info-box");
+  const infoLabel = document.getElementById("info-label");
+
+  resultContainer.style.display = "block";
+  infoBox.innerHTML = "";
+
+  // error
+  if (error) {
+    infoLabel.innerHTML = "loading info . . .";
+    infoBox.innerHTML = `Could not find information on <strong>${info.input}</strong>, please check for typos!`;
+    return;
+  }
+
+  // label
+  infoLabel.innerHTML = `loading info on ${info.input}. . .`;
+
+  // pokemon
+  if (info.inputType === "pokemon") {
+    const screenImg = document.getElementById("screen-img");
+    screenImg.setAttribute("src", info.pkmnImg);
+
+    // pokemon stats
+    const pkmnLabel = document.createElement("label");
+    pkmnLabel.innerHTML = "pokemon info"
+    const pkmnInfo = await displayPokemonStats(info);
+ 
+
+    // pokemondb links
+    let linkName = info.umbrellaName ? info.umbrellaName : info.input;
+
+    const typesLink = document.createElement("a");
+    typesLink.innerHTML = "see type effectiveness";
+    typesLink.setAttribute("href", `https://pokemondb.net/pokedex/${linkName}#dex-stats`);
+    typesLink.setAttribute("id", `types-link`);
+    const movesLink = document.createElement("a");
+    movesLink.innerHTML = "see moveset";
+    movesLink.setAttribute("href", `https://pokemondb.net/pokedex/${linkName}#dex-moves`);
+    movesLink.setAttribute("id", `moves-link`);
+
+    const linksContainer = document.createElement("div");
+    linksContainer.setAttribute("id", "pkmndb-links");
+    linksContainer.append(typesLink, movesLink);
+    
+    infoBox.append(pkmnLabel, pkmnInfo.statList, linksContainer);
+
+    // dice stats
+    const statLabel = document.createElement("label");
+    statLabel.innerHTML = "dice stats";
+    const statList = await displayDiceStats(info);
+
+    const natureDiv = document.createElement("div");
+    natureDiv.setAttribute("id", "nature-select");
+
+    const natureLabel = document.createElement("p");
+    natureLabel.innerHTML = "<strong>adjust by nature</strong>";
+
+    const natureAdjustments = document.createElement("p");
+    natureAdjustments.setAttribute("id", "nature-adjustments");
+
+    const natureSelect = await natureDropdown();
+
+    natureDiv.append(natureLabel, natureSelect, natureAdjustments);
+    infoBox.append(statLabel, statList, natureDiv);
+  } else if (info.inputType == "move") {
+    // move
+    const moveData = await displayMoveStats(info);
+    infoBox.appendChild(moveData.moveList);
+  } else {
+    // variations 
+    const testingP = document.createElement("p");
+    testingP.innerHTML = `there are multiple variations of <strong>${info.pkmn}</strong>, choose:`
+    infoBox.appendChild(testingP);
+
+    const variationBtns = await displayVariations(info.pkmnStaticData, info.pkmn);
+    infoBox.appendChild(variationBtns);
+  }
+};
 
 // get original dice stats
 const getDiceStats = async () => {
@@ -135,10 +216,54 @@ const displayMoveStats = async (info) => {
   return {moveList};
 };
 
+// display variation buttons 
+const displayVariations = async (variations, umbrellaName) => {
+  const variationsContainer = document.createElement("div");
+  variationsContainer.setAttribute("id", "variations-container");
+
+  for (let i in variations) {
+    const variationBtn = document.createElement("div");
+    variationBtn.setAttribute("class", "variation");
+    variationBtn.setAttribute("id", variations[i].pokemonName.toLowerCase());
+
+    variationBtn.innerHTML = variations[i].pokemonName;
+
+    variationBtn.addEventListener("click", async (e) => {
+      let variationInfo = variations[i];
+      let variationName = variations[i].pokemonName.toLowerCase()
+
+      // get img
+      let pkdxNum = Number.isInteger(variations[i].pokedexNumber) 
+        ? variations[i].pokedexNumber
+        : variations[i].pokedexNumber.split("-")[0]
+
+      let pkmnImg = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pkdxNum}.png`;
+
+      // get dice stats
+      let pkmnStats = await parseStats(variations[i]);
+
+      return displayInfo({
+        pkmnImg,
+        pkmnStats,
+        pkmnStaticData: variationInfo,
+        input: variationName,
+        inputType: "pokemon",
+        umbrellaName
+      });
+    })
+
+    variationsContainer.appendChild(variationBtn);
+  }
+
+  return variationsContainer;
+}
+
 export {
+  displayInfo,
   getDiceStats,
   natureDropdown,
   displayDiceStats,
   displayPokemonStats,
   displayMoveStats,
+  displayVariations
 };

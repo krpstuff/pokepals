@@ -158,7 +158,8 @@ input[type="submit"] {
 }
 
 #moves-link,
-#types-link {
+#types-link,
+.variation {
     box-sizing: border-box;
     width: 50%;
     display: block;
@@ -171,17 +172,21 @@ input[type="submit"] {
 }
 
 #moves-link:hover,
-#types-link:hover {
+#types-link:hover,
+.variation:hover {
     background: #4469b5;
 }
 
-a {
+a,
+.variation {
     color: #4469b5;
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+.variation:hover {
     color: #F7Ce46;
+    cursor: pointer;
 }
 
 select {
@@ -207,6 +212,12 @@ select {
 #subtract {
     color: #CA2E36;
 }
+
+#variations-container {
+    display: flex;
+}
+
+.variation {}
 
 pre {
     font-family: 'Courier New', Courier, monospace;
