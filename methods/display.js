@@ -1,7 +1,8 @@
 // imports
-import { natures, diceStat, neededMoveInfo, neededPkmnInfo } from "../data/conversions.js";
+import { natures, diceStat, neededMoveInfo, neededPkmnInfo, dice } from "../data/conversions.js";
 import { adjustStats, parseStats } from "./dice.js";
-import abilities from "../data/abilities.json" with { type: 'json' };
+import { fetchAbilities } from "./fetch.js";
+import { createMdFile } from "./gen-file.js";
 
 // display info 
 const displayInfo = async (info, error = false) => {
@@ -31,7 +32,6 @@ const displayInfo = async (info, error = false) => {
     const pkmnLabel = document.createElement("label");
     pkmnLabel.innerHTML = "pokemon info"
     const pkmnInfo = await displayPokemonStats(info);
- 
 
     // pokemondb links
     let linkName = info.umbrellaName ? info.umbrellaName : info.input;
@@ -68,7 +68,11 @@ const displayInfo = async (info, error = false) => {
     const natureSelect = await natureDropdown();
 
     natureDiv.append(natureLabel, natureSelect, natureAdjustments);
-    infoBox.append(statLabel, statList, natureDiv);
+
+    // gen file form
+    const fileForm = await displayGenFile(info);
+
+    infoBox.append(statLabel, statList, natureDiv, fileForm);
   } else if (info.inputType == "move") {
     // move
     const moveData = await displayMoveStats(info);
@@ -150,7 +154,6 @@ const displayDiceStats = async (info, replace = false) => {
   }
 
   for (let stat in info.pkmnStats.diceStats) {
-    console.log(stat)
     let statElem = document.createElement("li");
     statElem.innerHTML = `<b>${stat}</b>: ${info.pkmnStats.diceStats[stat]}`;
     statElem.setAttribute(stat, info.pkmnStats.origStats[stat]);
@@ -164,30 +167,19 @@ const displayDiceStats = async (info, replace = false) => {
 const displayPokemonStats = async (info) => {
   const statList = document.createElement("ul");
   
-  // type(s)
-  let pkmnTypes = info.pkmnStaticData["type1"];
-  if(info.pkmnStaticData["type2"]) pkmnTypes += `, ${info.pkmnStaticData["type2"]}`;
-  
   // abilities
-  const pkmnAbilities = [info.pkmnStaticData["ability1"]]
-  if(info.pkmnStaticData["ability2"]) pkmnAbilities.push(info.pkmnStaticData["ability2"])
-  if(info.pkmnStaticData["hiddenAbility"]) pkmnAbilities.push(`${info.pkmnStaticData["hiddenAbility"]} (hidden)`)
-
   let abilitiesList = document.createElement("ul");
 
-  for (let i in pkmnAbilities) {
-    let abilityDesc = abilities[pkmnAbilities[i].split(" (")[0].toLowerCase()].description;
+  for (let ability in info.pkmnStaticData["abilities"]) {
     let abilityElem = document.createElement("li");
-    abilityElem.innerHTML = `<strong>${pkmnAbilities[i]}</strong>: ${abilityDesc}`;
+    abilityElem.innerHTML = `<strong>${ability}</strong>: ${info.pkmnStaticData["abilities"][ability]}`;
     abilitiesList.appendChild(abilityElem);
   }
 
   // pokemon stats
   for (let stat in neededPkmnInfo) {
     let statElem = document.createElement("li");
-    if (stat == "type") {
-      statElem.innerHTML = `<strong>type(s):</strong> ${pkmnTypes}`;
-    } else if (stat == "abilities") {
+    if (stat == "abilities") {
       statElem.innerHTML = `<strong>possible abilities</strong>:`;
       statElem.appendChild(abilitiesList);
     } 
@@ -256,6 +248,146 @@ const displayVariations = async (variations, umbrellaName) => {
   }
 
   return variationsContainer;
+}
+
+// display form to generate md file
+const displayGenFile = async (info) => {
+  // create form 
+  const genFileForm = document.createElement("form");
+  const genFileLabel = document.createElement("h2");
+
+  genFileForm.setAttribute("id", "gen-md");
+  genFileLabel.innerHTML = "create markdown file"
+  
+  // create ability radio inputs
+  let abilityLabel = document.createElement("label");
+  abilityLabel.innerHTML = "Select Ability";
+  genFileForm.append(genFileLabel, abilityLabel);
+  
+  for (let ability in info.pkmnStaticData.abilities) {
+    let radioInput = document.createElement("input");
+
+    radioInput.setAttribute("type", "radio");
+    radioInput.setAttribute("name", "chosenAbility");
+    radioInput.setAttribute("value", ability);
+
+    genFileForm.append(radioInput, ability);
+  }
+
+  // create move inputs 
+  let moveInputContainer = document.createElement("div");
+  moveInputContainer.setAttribute("id", "move-inputs");
+
+  let sampleMoves = ["growl", "thunder shock", "sunny day", "bite"]
+
+  for (let i = 1; i <= 4; i++) {
+    let move = document.createElement("div");
+
+    let moveInputLabel = document.createElement("label");
+    let moveInput = document.createElement("input");
+
+    move.setAttribute("class", "input-container");
+    moveInputLabel.setAttribute("for", `move${i}`);
+    moveInput.setAttribute("type", "text");
+    moveInput.setAttribute("name", `move${i}`);
+    moveInput.setAttribute("placeholder", `ex: ${sampleMoves[i-1]}`);
+
+    moveInputLabel.innerHTML = `Move ${i} Name`;
+
+    move.append(moveInputLabel, moveInput);
+    moveInputContainer.appendChild(move)
+  }
+
+  genFileForm.append(moveInputContainer);
+
+  // create type effectiveness inputs 
+  let effectiveness = ["Weaknesses", "Resistances", "Immunities"];
+  let sampleEffs = ["Fire, ground", "Ice, fairy", "Ghost, rock, dark"]
+  let effInputContainer = document.createElement("div");
+  effInputContainer.setAttribute("id", "eff-inputs");
+
+  for (let i in effectiveness) {
+    let eff = document.createElement("div");
+    let effLabel = document.createElement("label");
+    let effInput = document.createElement("input");
+
+    eff.setAttribute("class", "input-container");
+    effLabel.setAttribute("for", effectiveness[i]);
+    effInput.setAttribute("type", "text");
+    effInput.setAttribute("name", effectiveness[i]);
+    effInput.setAttribute("placeholder", `ex: ${sampleEffs[i]}`);
+
+    effLabel.innerHTML = effectiveness[i];
+
+    eff.append(effLabel, effInput);
+    effInputContainer.appendChild(eff);
+  }
+  
+  // create submit button 
+  const submitGenFile = document.createElement("input");
+  submitGenFile.setAttribute("type", "submit");
+  submitGenFile.setAttribute("value", `Create MD File for ${info.pkmnStaticData.pokemonName}`);
+  genFileForm.append(moveInputContainer, effInputContainer, submitGenFile);
+
+  // add event listener to form submit 
+  genFileForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    // delete old code block/copy button if any 
+    let oldCode = document.getElementById("code-block");
+    let oldBtn = document.getElementById("copy-btn");
+    let oldBtnCopied = document.getElementById("copied");
+    if(oldCode) {
+      oldCode.remove();
+      oldBtn?.remove();
+      oldBtnCopied?.remove();
+    }
+
+    // get form info 
+    let formData = new FormData(e.target);
+
+    for (let pair of formData.entries()) {
+      info.pkmnStaticData[pair[0]] = pair[1];
+    }
+
+    // get ability desc
+    info.pkmnStaticData["chosenAbilityDesc"] = info.pkmnStaticData.abilities[info.pkmnStaticData["chosenAbility"]];
+    
+    // get current nature 
+    let natureDd = document.getElementById("pokemon-nature").value;
+    natureDd = natureDd.charAt(0).toUpperCase() + natureDd.slice(1);
+    info.pkmnStaticData["chosenNature"] = natureDd;
+
+    // get current dice 
+    for (let stat in diceStat) {
+      let statLi = document.querySelector(`[${stat}]`);
+      let statDice = statLi.innerHTML.split(": ")[1];
+      info.pkmnStaticData[`${stat}-dice`] = statDice;
+    }
+
+    // set img 
+    info.pkmnStaticData["pkmnImg"] = info.pkmnImg;
+
+    // generate file 
+    const fileContents = await createMdFile(info.pkmnStaticData);
+    const fileCode = document.createElement("pre");
+    fileCode.setAttribute("id", "code-block");
+    fileCode.innerHTML = `${fileContents}`;
+
+    // copy button 
+    let copyBtn = document.createElement("div");
+    copyBtn.setAttribute("id", "copy-btn");
+    copyBtn.innerHTML = "Copy MD File";
+    copyBtn.addEventListener("click", (e) => {
+      navigator.clipboard.writeText(fileContents);
+      e.target.innerHTML = "Copied!";
+      e.target.setAttribute("id", "copied")
+    })
+
+    genFileForm.append(fileCode, copyBtn);
+  });
+
+  return genFileForm;
 }
 
 export {

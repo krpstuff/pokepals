@@ -1,4 +1,4 @@
-> [!column | no-t]
+export const template = `> [!column | no-t]
 >> [!infobox]
 >> # POKEMONNAME
 >> ![[IMGNAME.png]]
@@ -118,4 +118,4 @@
 >> | --- | --- | --- | --- | 
 >> | MOVEELEMENT4 | MOVETYPE4 | RANGEINFO4 | WOUNDINFO4 |
 >> - FIRSTBULLET4 
->> - MOVEDESC4
+>> - MOVEDESC4`

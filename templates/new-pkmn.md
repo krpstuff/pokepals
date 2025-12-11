@@ -5,20 +5,20 @@
 >> ###### Typing 
 >> | Category | Types | 
 >> | --- | --- |
->> | Type | TYPEINFO |
->> | Weak | WEAKINFO | 
->> | Resist | RESISTINFO |
->>| Immune | IMMUNEINFO |
+>> | Type | dark |
+>> | Weak | dark | 
+>> | Resist | dark |
+>>| Immune | dark |
 >>
 >> ###### Stats 
 >> | Stat | Dice | 
 >> | --- | --- |
->> | HP | HPDICE |
->> | Attack | ATTDICE | 
->> | Defense | DEFDICE |
->> | Sp. Att | SPATDICE |
->> | Sp. Def | SPDEFDICE |
->> | Speed | SPDDICE |
+>> | HP | dark |
+>> | Attack | dark | 
+>> | Defense | dark |
+>> | Sp. Att | dark |
+>> | Sp. Def | dark |
+>> | Speed | dark |
 >>
 >>###### Details 
 >> | Stat | Value |
@@ -26,7 +26,7 @@
 >> | Rank | 1 |
 >> | Experience | 0 |
 >> | Friendship | 0 |
->> | Movement | MOVEMENTINFO |  
+>> | Movement | dark |  
 >>
 >> ###### Items 
 >> | Name | Desc | 
@@ -37,17 +37,17 @@
 >> | Name | Info | 
 >> | --- | --- |
 >> | Sex | - |
->> | Size | SIZEINFO |
->> | Nature | NATUREINFO |
+>> | Size | dark |
+>> | Nature | dark |
 >> | Special Notes | - |
 >>
 >> ###### Ability 
 >> | Name | Description |
 >> | --- | --- |
->> | ABILITYNAME | ABILITYDESC |
+>> | dark | dark |
 >
 >> [!infobox]
->> ###### MOVENAME1
+>> ###### movemove
 >>> [!checks | no-t]
 >>> -
 >>>    - **PP** 
@@ -62,10 +62,10 @@
 >>
 >> | Type | Move | Range | Wounds | 
 >> | --- | --- | --- | --- | 
->> | MOVEELEMENT1 | MOVETYPE1 | RANGEINFO1 | WOUNDINFO1 |
->> - FIRSTBULLET1 
->> - MOVEDESC1
->> ###### MOVENAME2
+>> | movemove | movemove | movemove | movemove |
+>> - movemove 
+>> - movemove
+>> ###### movemove
 >>> [!checks | no-t]
 >>> -
 >>>    - **PP** 
@@ -80,10 +80,10 @@
 >>
 >> | Type | Move | Range | Wounds | 
 >> | --- | --- | --- | --- | 
->> | MOVEELEMENT2 | MOVETYPE2 | RANGEINFO2 | WOUNDINFO2 |
->> - FIRSTBULLET2 
->> - MOVEDESC2
->> ###### MOVENAME3
+>> | movemove | movemove | movemove | movemove |
+>> - movemove 
+>> - movemove
+>> ###### movemove
 >>> [!checks | no-t]
 >>> -
 >>>    - **PP** 
@@ -98,10 +98,10 @@
 >>
 >> | Type | Move | Range | Wounds | 
 >> | --- | --- | --- | --- | 
->> | MOVEELEMENT3 | MOVETYPE3 | RANGEINFO3 | WOUNDINFO3 |
->> - FIRSTBULLET3 
->> - MOVEDESC3
->> ###### MOVENAME4
+>> | movemove | movemove | movemove | movemove |
+>> - movemove 
+>> - movemove
+>> ###### movemove
 >>> [!checks | no-t]
 >>> -
 >>>    - **PP** 
@@ -116,6 +116,6 @@
 >>
 >> | Type | Move | Range | Wounds | 
 >> | --- | --- | --- | --- | 
->> | MOVEELEMENT4 | MOVETYPE4 | RANGEINFO4 | WOUNDINFO4 |
->> - FIRSTBULLET4 
->> - MOVEDESC4
+>> | movemove | movemove | movemove | movemove |
+>> - movemove 
+>> - movemove

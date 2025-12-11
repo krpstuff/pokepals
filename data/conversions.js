@@ -1,12 +1,12 @@
 const dice = ["D4", "D6", "D8", "D10", "D12", "D20"];
-const diceStat = [
-  "hp",
-  "attack",
-  "defense",
-  "special-attack",
-  "special-defense",
-  "speed",
-];
+const diceStat = {
+  "hp": "hp",
+  "attack": "att",
+  "defense": "def",
+  "special-attack": "sp. atk",
+  "special-defense": "sp. def",
+  "speed": "spd"
+}
 
 const statThresholds = {
   30: 0,
@@ -19,43 +19,43 @@ const statThresholds = {
 
 const natures = {
   // add, subtract
-  default: [0, 0],
-  playful: [0, 0],
-  assertive: [1, 0],
-  meticulous: [2, 0],
-  analytical: [3, 0],
-  vibrant: [4, 0],
-  energetic: [5, 0],
-  tactful: [0, 1],
-  hardy: [1, 1],
-  bold: [2, 1],
-  modest: [3, 1],
-  calm: [4, 1],
-  timid: [5, 1],
-  generous: [0, 2],
-  lonely: [1, 2],
-  docile: [2, 2],
-  mild: [3, 2],
-  gentle: [4, 2],
-  hasty: [5, 2],
-  optimistic: [0, 3],
-  adamant: [1, 3],
-  impish: [2, 3],
-  bashful: [3, 3],
-  careful: [4, 3],
-  jolly: [5, 3],
-  pragmatic: [0, 4],
-  naughty: [1, 4],
-  lax: [2, 4],
-  rash: [3, 4],
-  quirky: [4, 4],
-  naive: [5, 4],
-  resilient: [0, 5],
-  brave: [1, 5],
-  relaxed: [2, 5],
-  quiet: [3, 5],
-  sassy: [4, 5],
-  serious: [5, 5],
+  default: ["hp", "hp"],
+  playful: ["hp", "hp"],
+  assertive: ["attack", "hp"],
+  meticulous: ["defense", "hp"],
+  analytical: ["special-attack", "hp"],
+  vibrant: ["special-defense", "hp"],
+  energetic: ["speed", "hp"],
+  tactful: ["hp", "attack"],
+  hardy: ["attack", "attack"],
+  bold: ["defense", "attack"],
+  modest: ["special-attack", "attack"],
+  calm: ["special-defense", "attack"],
+  timid: ["speed", "attack"],
+  generous: ["hp", "defense"],
+  lonely: ["attack", "defense"],
+  docile: ["defense", "defense"],
+  mild: ["special-attack", "defense"],
+  gentle: ["special-defense", "defense"],
+  hasty: ["speed", "defense"],
+  optimistic: ["hp", "special-attack"],
+  adamant: ["attack", "special-attack"],
+  impish: ["defense", "special-attack"],
+  bashful: ["special-attack", "special-attack"],
+  careful: ["special-defense", "special-attack"],
+  jolly: ["speed", "special-attack"],
+  pragmatic: ["hp", "special-defense"],
+  naughty: ["attack", "special-defense"],
+  lax: ["defense", "special-defense"],
+  rash: ["special-attack", "special-defense"],
+  quirky: ["special-defense", "special-defense"],
+  naive: ["speed", "special-defense"],
+  resilient: ["hp", "speed"],
+  brave: ["attack", "speed"],
+  relaxed: ["defense", "speed"],
+  quiet: ["special-attack", "speed"],
+  sassy: ["special-defense", "speed"],
+  serious: ["speed", "speed"],
 };
 
 const neededMoveInfo = {
@@ -71,11 +71,40 @@ const neededMoveInfo = {
 
 const neededPkmnInfo = {
   pokemonName: "name",
-  type: "type",
+  types: "types",
   evolutionRank: "evolution rank or method",
   size: "size",
   movement: "movement type",
   abilities: "abilities"
+}
+
+const templateConversions = {
+  POKEMONNAME: "pokemonName",
+  TYPEINFO: "types",
+  "IMGNAME.png": "pkmnImg",
+  WEAKINFO: "Weaknesses",
+  RESISTINFO: "Resistances",
+  IMMUNEINFO: "Immunities",
+  HPDICE: "hp-dice",
+  ATTDICE: "attack-dice",
+  DEFDICE: "defense-dice",
+  SPATDICE: "special-attack-dice",
+  SPDEFDICE: "special-defense-dice",
+  SPDDICE: "speed-dice",
+  MOVEMENTINFO: "movement",
+  SIZEINFO: "size",
+  NATUREINFO: "chosenNature",
+  ABILITYNAME: "chosenAbility",
+  ABILITYDESC: "chosenAbilityDesc",
+  MOVES: {
+    MOVENAME: "move",
+    MOVEELEMENT: "type",
+    MOVETYPE: "category",
+    RANGEINFO: "range",
+    WOUNDINFO: "wounds",
+    FIRSTBULLET: "firstBullet",
+    MOVEDESC: "extDescEffect"
+  }
 }
 
 export {
@@ -84,5 +113,6 @@ export {
   statThresholds,
   natures,
   neededMoveInfo,
-  neededPkmnInfo
+  neededPkmnInfo,
+  templateConversions
 };

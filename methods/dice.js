@@ -9,8 +9,8 @@ import {
 // get original stats
 const parseStats = async (pkmnData, nature = false) => {
   const origStats = {};
-  for (const i in diceStat) {
-    origStats[diceStat[i]] = dice.indexOf(pkmnData[diceStat[i]].toUpperCase());
+  for (const stat in diceStat) {
+    origStats[stat] = dice.indexOf(pkmnData[stat].toUpperCase());
   }
 
   let diceStats = await convertStats(origStats);
@@ -24,8 +24,8 @@ const adjustStats = async (stats, nature) => {
 
   if (nature !== "default") {
     // stats to adjust
-    const add = diceStat[natures[nature][0]];
-    const subtract = diceStat[natures[nature][1]];
+    const add = natures[nature][0];
+    const subtract = natures[nature][1]; 
 
     // adjust
     if (adjustedStats[add] < 5) adjustedStats[add] += 1;

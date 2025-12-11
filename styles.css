@@ -91,7 +91,8 @@ main {
     display: block;
 }
 
-label {
+label,
+h2 {
     font-family: 'Jockey One', system-ui;
     font-size: 1.3em;
     color: #F7Ce46;
@@ -159,7 +160,10 @@ input[type="submit"] {
 
 #moves-link,
 #types-link,
-.variation {
+.variation,
+#gen-md input[type="submit"],
+#copy-btn,
+#copied {
     box-sizing: border-box;
     width: 50%;
     display: block;
@@ -173,7 +177,9 @@ input[type="submit"] {
 
 #moves-link:hover,
 #types-link:hover,
-.variation:hover {
+.variation:hover,
+#gen-md input[type="submit"]:hover,
+#copy-btn:hover {
     background: #4469b5;
 }
 
@@ -217,14 +223,78 @@ select {
     display: flex;
 }
 
-.variation {}
-
 pre {
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.7em;
     background: #eee;
-    padding: 10px;
-    max-height: 100px;
+    padding: 20px;
+    height: 250px;
+    width: 100%;
+    display: block;
     overflow: auto;
     border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#gen-md {
+    border-top: 1px solid #4469b5;
+    padding: 10px 0;
+}
+
+#gen-md label {
+    font-size: 1em;
+    font-family: 'VT323', monospace;
+    color: #4469b5;
+    text-shadow: 1px 1px #F7Ce46;
+}
+
+#gen-md input[type="text"] {
+    background: white;
+    font-size: 0.8em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#gen-md input[type="submit"],
+#copy-btn,
+#copied {
+    font-size: 1em;
+    color: #4469b5;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+#gen-md input[type="submit"]:hover,
+#copy-btn:hover {
+    color: #F7Ce46;
+    cursor: pointer;
+}
+
+#gen-md input[type="radio"] {
+    display: inline-block;
+    margin: 10px 10px 10px 20px;
+}
+
+#gen-md input[type="radio"]:first-of-type {
+    display: inline-block;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.input-container {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#move-inputs,
+#eff-inputs {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+#copied {
+    background: #4469b5;
+    color: #F7Ce46;
 }
