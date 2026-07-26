@@ -2,6 +2,7 @@
 import moves from "../data/moves.json" with { type: 'json' };
 
 const findMove = async (moveName) => {
+  moveName = moveName.toLowerCase();
   if(moves[moveName]) {
     return moves[moveName]
   } else {
